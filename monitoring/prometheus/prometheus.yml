@@ -1,0 +1,64 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  external_labels:
+    monitor: 'stock-pipeline'
+
+rule_files:
+  - "alert.rules"
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+          - alertmanager:9093
+
+scrape_configs:
+  # Prometheus itself
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  # Node Exporter
+  - job_name: 'node-exporter'
+    static_configs:
+      - targets: ['node-exporter:9100']
+
+  # cAdvisor
+  - job_name: 'cadvisor'
+    static_configs:
+      - targets: ['cadvisor:8080']
+
+  # Hadoop Metrics
+  - job_name: 'hadoop'
+    static_configs:
+      - targets: ['namenode:9870']
+    metrics_path: '/jmx'
+
+  # Spark Metrics
+  - job_name: 'spark'
+    static_configs:
+      - targets: ['spark-master:8080']
+    metrics_path: '/metrics/prometheus'
+
+  # PostgreSQL Metrics
+  - job_name: 'postgres'
+    static_configs:
+      - targets: ['postgres:9187']
+
+  # Redis Metrics
+  - job_name: 'redis'
+    static_configs:
+      - targets: ['redis:9121']
+
+  # Backend API Metrics
+  - job_name: 'backend'
+    static_configs:
+      - targets: ['backend:8000']
+    metrics_path: '/metrics'
+
+  # Data Ingestion Metrics
+  - job_name: 'data-ingestion'
+    static_configs:
+      - targets: ['data-ingestion:8080']
+    metrics_path: '/metrics'

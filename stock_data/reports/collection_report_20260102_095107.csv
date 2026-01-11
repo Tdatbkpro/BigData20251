@@ -1,0 +1,4 @@
+exchange,successful,failed,data_points,files
+NASDAQ,8,2,130,8
+NYSE,8,2,144,8
+AMEX,10,0,220,10

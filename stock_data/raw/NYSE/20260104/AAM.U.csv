@@ -1,0 +1,4 @@
+exchangeCode,symbolCode,interval,date,open,high,low,close,volume,symbol,exchange,download_timestamp
+NYSE,AAM.U,d,2025-12-03,10.65,10.65,10.63,10.63,600,AAM.U,NYSE,2026-01-04 16:18:09.321707
+NYSE,AAM.U,d,2025-12-05,10.5,10.5,10.5,10.5,100,AAM.U,NYSE,2026-01-04 16:18:09.321707
+NYSE,AAM.U,d,2025-12-10,10.6,10.6,10.6,10.6,400,AAM.U,NYSE,2026-01-04 16:18:09.321707

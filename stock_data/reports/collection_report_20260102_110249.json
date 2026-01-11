@@ -1,0 +1,106 @@
+{
+  "total_successful": 26,
+  "total_failed": 4,
+  "total_data_points": 452,
+  "exchanges": {
+    "NASDAQ": {
+      "exchange": "NASDAQ",
+      "successful": [
+        "AACB",
+        "AACBR",
+        "AACBU",
+        "AACG",
+        "AADR",
+        "AAEQ",
+        "AAL",
+        "AALG"
+      ],
+      "failed": [
+        "AACT-UN",
+        "AAM-UN"
+      ],
+      "files": [
+        "/data/raw/NASDAQ/20260102/AACB.csv",
+        "/data/raw/NASDAQ/20260102/AACBR.csv",
+        "/data/raw/NASDAQ/20260102/AACBU.csv",
+        "/data/raw/NASDAQ/20260102/AACG.csv",
+        "/data/raw/NASDAQ/20260102/AADR.csv",
+        "/data/raw/NASDAQ/20260102/AAEQ.csv",
+        "/data/raw/NASDAQ/20260102/AAL.csv",
+        "/data/raw/NASDAQ/20260102/AALG.csv"
+      ],
+      "database_success": 1,
+      "database_failed": 7,
+      "total_data_points": 121,
+      "start_time": "2026-01-02T10:42:48.473563",
+      "end_time": "2026-01-02T10:50:05.965478"
+    },
+    "NYSE": {
+      "exchange": "NYSE",
+      "successful": [
+        "A",
+        "AA",
+        "AAM",
+        "AAM.U",
+        "AAM.W",
+        "AAM.WS",
+        "AAMI",
+        "AAP"
+      ],
+      "failed": [
+        "AAM.UN",
+        "AAM.WT"
+      ],
+      "files": [
+        "/data/raw/NYSE/20260102/A.csv",
+        "/data/raw/NYSE/20260102/AA.csv",
+        "/data/raw/NYSE/20260102/AAM.csv",
+        "/data/raw/NYSE/20260102/AAM.U.csv",
+        "/data/raw/NYSE/20260102/AAM.W.csv",
+        "/data/raw/NYSE/20260102/AAM.WS.csv",
+        "/data/raw/NYSE/20260102/AAMI.csv",
+        "/data/raw/NYSE/20260102/AAP.csv"
+      ],
+      "database_success": 1,
+      "database_failed": 7,
+      "total_data_points": 130,
+      "start_time": "2026-01-02T10:50:15.992631",
+      "end_time": "2026-01-02T10:57:00.396751"
+    },
+    "AMEX": {
+      "exchange": "AMEX",
+      "successful": [
+        "AAA",
+        "AAAA",
+        "AAAU",
+        "AAPR",
+        "AAPW",
+        "AAPX",
+        "AAPY",
+        "AAUM",
+        "ABEQ",
+        "ABFL"
+      ],
+      "failed": [],
+      "files": [
+        "/data/raw/AMEX/20260102/AAA.csv",
+        "/data/raw/AMEX/20260102/AAAA.csv",
+        "/data/raw/AMEX/20260102/AAAU.csv",
+        "/data/raw/AMEX/20260102/AAPR.csv",
+        "/data/raw/AMEX/20260102/AAPW.csv",
+        "/data/raw/AMEX/20260102/AAPX.csv",
+        "/data/raw/AMEX/20260102/AAPY.csv",
+        "/data/raw/AMEX/20260102/AAUM.csv",
+        "/data/raw/AMEX/20260102/ABEQ.csv",
+        "/data/raw/AMEX/20260102/ABFL.csv"
+      ],
+      "database_success": 1,
+      "database_failed": 9,
+      "total_data_points": 201,
+      "start_time": "2026-01-02T10:57:10.411955",
+      "end_time": "2026-01-02T11:02:49.708184"
+    }
+  },
+  "start_time": "2026-01-02T10:42:17.084006",
+  "end_time": "2026-01-02T11:02:49.708323"
+}

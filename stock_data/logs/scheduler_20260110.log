@@ -1,0 +1,2084 @@
+2026-01-10 08:45:57,816 - __main__ - INFO - 🚀 STARTING DATA INGESTION SCHEDULER
+2026-01-10 08:45:57,817 - __main__ - INFO - Configuration:
+2026-01-10 08:45:57,818 - __main__ - INFO -   - Interval: 6 hours
+2026-01-10 08:45:57,831 - __main__ - INFO -   - Symbols per exchange: 10
+2026-01-10 08:45:57,832 - __main__ - INFO -   - Days of data: 30
+2026-01-10 08:45:57,833 - __main__ - INFO -   - Data directory: /data
+2026-01-10 08:45:57,834 - __main__ - INFO - ============================================================
+2026-01-10 08:45:57,835 - __main__ - INFO - 
+🔄 CYCLE #1 - 2026-01-10 08:45:57
+2026-01-10 08:45:59,172 - __main__ - INFO - ============================================================
+2026-01-10 08:45:59,173 - __main__ - INFO - STARTING DATA COLLECTION CYCLE
+2026-01-10 08:45:59,173 - __main__ - INFO - ============================================================
+2026-01-10 08:45:59,175 - __main__ - INFO - 📊 STEP 1: Collecting stock data and uploading to HDFS...
+2026-01-10 08:45:59,176 - data_collector - INFO - ============================================================
+2026-01-10 08:45:59,177 - data_collector - INFO - EODData COLLECTOR - STARTING (ALL EXCHANGES)
+2026-01-10 08:45:59,179 - data_collector - INFO - Start time: 2026-01-10 08:45:59
+2026-01-10 08:45:59,180 - data_collector - INFO - Config: 20 symbols/exchange, 30 days of data
+2026-01-10 08:45:59,180 - data_collector - INFO - NOTE: Each exchange will be uploaded to HDFS immediately after collection
+2026-01-10 08:45:59,181 - data_collector - INFO - ============================================================
+2026-01-10 08:45:59,182 - data_collector - INFO - Using API key: 1rwJF2a5...
+2026-01-10 08:45:59,271 - data_collector - INFO - Testing API connection...
+2026-01-10 08:45:59,272 - data_collector - INFO - Fetching ALL exchanges list...
+2026-01-10 08:46:01,821 - data_collector - INFO - Found 29 total exchanges
+2026-01-10 08:46:01,823 - data_collector - INFO - API connection successful. Found 29 exchanges
+2026-01-10 08:46:01,824 - data_collector - INFO - Getting ALL exchanges...
+2026-01-10 08:46:01,826 - data_collector - INFO - Fetching ALL exchanges list...
+2026-01-10 08:46:02,198 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 08:46:33,054 - data_collector - INFO - Found 29 total exchanges
+2026-01-10 08:46:33,055 - data_collector - INFO - Found 29 exchanges
+2026-01-10 08:46:33,056 - data_collector - INFO - Processing 29 exchanges...
+2026-01-10 08:46:33,056 - data_collector - INFO - 
+============================================================
+2026-01-10 08:46:33,057 - data_collector - INFO - STARTING COLLECTION FOR AMEX (American Stock Exchange)
+2026-01-10 08:46:33,058 - data_collector - INFO - Progress: 1/29
+2026-01-10 08:46:33,058 - data_collector - INFO - ============================================================
+2026-01-10 08:46:33,059 - data_collector - INFO - 
+============================================================
+2026-01-10 08:46:33,060 - data_collector - INFO - COLLECTING FROM AMEX
+2026-01-10 08:46:33,067 - data_collector - INFO - Config: 20 symbols, 30 days of data
+2026-01-10 08:46:33,079 - data_collector - INFO - ============================================================
+2026-01-10 08:46:33,080 - data_collector - INFO - Fetching symbols for AMEX...
+2026-01-10 08:46:33,467 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 08:49:43,190 - data_collector - INFO - Found 20 symbols for AMEX
+2026-01-10 08:49:43,193 - data_collector - INFO - Processing 20 symbols...
+2026-01-10 08:49:43,194 - data_collector - INFO - 
+[1/20] AAA: First Priority Clo Bond ETF
+2026-01-10 08:49:43,194 - data_collector - INFO - Fetching d data for AAA.AMEX
+2026-01-10 08:49:44,219 - data_collector - INFO - Retrieved 21 records for AAA
+2026-01-10 08:49:44,245 - data_collector - INFO - ✓ Saved AAA.AMEX to /data/raw/AMEX/20260110/AAA.csv (1,942 bytes)
+2026-01-10 08:49:44,320 - data_collector - INFO - Saved 5 records to database
+2026-01-10 08:49:44,321 - data_collector - INFO -   ✓ 21 records
+2026-01-10 08:49:44,323 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 08:49:46,325 - data_collector - INFO - 
+[2/20] AAAA: Amplius Aggressive Asset Allocation ETF
+2026-01-10 08:49:46,326 - data_collector - INFO - Fetching d data for AAAA.AMEX
+2026-01-10 08:49:46,726 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 08:50:18,052 - data_collector - INFO - Retrieved 21 records for AAAA
+2026-01-10 08:50:18,089 - data_collector - INFO - ✓ Saved AAAA.AMEX to /data/raw/AMEX/20260110/AAAA.csv (2,021 bytes)
+2026-01-10 08:50:18,138 - data_collector - INFO - Saved 5 records to database
+2026-01-10 08:50:18,140 - data_collector - INFO -   ✓ 21 records
+2026-01-10 08:50:18,145 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 08:50:20,148 - data_collector - INFO - 
+[3/20] AAAU: GS Physical Gold ETF
+2026-01-10 08:50:20,149 - data_collector - INFO - Fetching d data for AAAU.AMEX
+2026-01-10 08:50:20,562 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 08:50:51,846 - data_collector - INFO - Retrieved 21 records for AAAU
+2026-01-10 08:50:51,889 - data_collector - INFO - ✓ Saved AAAU.AMEX to /data/raw/AMEX/20260110/AAAU.csv (2,042 bytes)
+2026-01-10 08:50:51,936 - data_collector - INFO - Saved 5 records to database
+2026-01-10 08:50:51,937 - data_collector - INFO -   ✓ 21 records
+2026-01-10 08:50:51,939 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 08:50:53,942 - data_collector - INFO - 
+[4/20] AAPR: Innovator Equity Defined Protection ETF Apr 26
+2026-01-10 08:50:53,943 - data_collector - INFO - Fetching d data for AAPR.AMEX
+2026-01-10 08:50:54,346 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 08:51:25,316 - data_collector - INFO - Retrieved 21 records for AAPR
+2026-01-10 08:51:25,344 - data_collector - INFO - ✓ Saved AAPR.AMEX to /data/raw/AMEX/20260110/AAPR.csv (2,011 bytes)
+2026-01-10 08:51:25,382 - data_collector - INFO - Saved 5 records to database
+2026-01-10 08:51:25,383 - data_collector - INFO -   ✓ 21 records
+2026-01-10 08:51:25,384 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 08:51:27,388 - data_collector - INFO - 
+[5/20] AAPW: Roundhill Aapl Weeklypay ETF
+2026-01-10 08:51:27,389 - data_collector - INFO - Fetching d data for AAPW.AMEX
+2026-01-10 08:51:27,808 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 08:51:58,724 - data_collector - INFO - Retrieved 21 records for AAPW
+2026-01-10 08:51:58,770 - data_collector - INFO - ✓ Saved AAPW.AMEX to /data/raw/AMEX/20260110/AAPW.csv (1,983 bytes)
+2026-01-10 08:51:58,815 - data_collector - INFO - Saved 5 records to database
+2026-01-10 08:51:58,817 - data_collector - INFO -   ✓ 21 records
+2026-01-10 08:51:58,823 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 08:52:00,832 - data_collector - INFO - 
+[6/20] AAPX: T-Rex 2X Long Apple Daily Target ETF
+2026-01-10 08:52:00,833 - data_collector - INFO - Fetching d data for AAPX.AMEX
+2026-01-10 08:52:01,247 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 08:52:32,094 - data_collector - INFO - Retrieved 21 records for AAPX
+2026-01-10 08:52:32,155 - data_collector - INFO - ✓ Saved AAPX.AMEX to /data/raw/AMEX/20260110/AAPX.csv (2,010 bytes)
+2026-01-10 08:52:32,200 - data_collector - INFO - Saved 5 records to database
+2026-01-10 08:52:32,201 - data_collector - INFO -   ✓ 21 records
+2026-01-10 08:52:32,204 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 08:52:34,207 - data_collector - INFO - 
+[7/20] AAPY: Kurv Yield Premium Apple [Aapl] ETF
+2026-01-10 08:52:34,208 - data_collector - INFO - Fetching d data for AAPY.AMEX
+2026-01-10 08:52:34,589 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 08:53:05,555 - data_collector - INFO - Retrieved 21 records for AAPY
+2026-01-10 08:53:05,605 - data_collector - INFO - ✓ Saved AAPY.AMEX to /data/raw/AMEX/20260110/AAPY.csv (2,031 bytes)
+2026-01-10 08:53:05,642 - data_collector - INFO - Saved 5 records to database
+2026-01-10 08:53:05,643 - data_collector - INFO -   ✓ 21 records
+2026-01-10 08:53:05,646 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 08:53:07,648 - data_collector - INFO - 
+[8/20] AAUM: Tema Alternative Asset Managers ETF
+2026-01-10 08:53:07,651 - data_collector - INFO - Fetching d data for AAUM.AMEX
+2026-01-10 08:53:08,035 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 08:53:38,932 - data_collector - INFO - Retrieved 21 records for AAUM
+2026-01-10 08:53:38,977 - data_collector - INFO - ✓ Saved AAUM.AMEX to /data/raw/AMEX/20260110/AAUM.csv (2,098 bytes)
+2026-01-10 08:53:39,016 - data_collector - INFO - Saved 5 records to database
+2026-01-10 08:53:39,016 - data_collector - INFO -   ✓ 21 records
+2026-01-10 08:53:39,017 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 08:53:41,021 - data_collector - INFO - 
+[9/20] ABEQ: Absolute Core Strategy ETF
+2026-01-10 08:53:41,022 - data_collector - INFO - Fetching d data for ABEQ.AMEX
+2026-01-10 08:53:41,403 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 08:54:12,190 - data_collector - INFO - Retrieved 21 records for ABEQ
+2026-01-10 08:54:12,228 - data_collector - INFO - ✓ Saved ABEQ.AMEX to /data/raw/AMEX/20260110/ABEQ.csv (1,987 bytes)
+2026-01-10 08:54:12,268 - data_collector - INFO - Saved 5 records to database
+2026-01-10 08:54:12,269 - data_collector - INFO -   ✓ 21 records
+2026-01-10 08:54:12,275 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 08:54:14,277 - data_collector - INFO - 
+[10/20] ABFL: Abacus Fcf Leaders ETF
+2026-01-10 08:54:14,279 - data_collector - INFO - Fetching d data for ABFL.AMEX
+2026-01-10 08:54:14,704 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 08:54:45,164 - data_collector - INFO - Retrieved 21 records for ABFL
+2026-01-10 08:54:45,185 - data_collector - INFO - ✓ Saved ABFL.AMEX to /data/raw/AMEX/20260110/ABFL.csv (2,004 bytes)
+2026-01-10 08:54:45,209 - data_collector - INFO - Saved 5 records to database
+2026-01-10 08:54:45,210 - data_collector - INFO -   ✓ 21 records
+2026-01-10 08:54:45,211 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 08:54:47,214 - data_collector - INFO - 
+[11/20] ABLD: Abacus Fcf Real Assets Leaders ETF
+2026-01-10 08:54:47,215 - data_collector - INFO - Fetching d data for ABLD.AMEX
+2026-01-10 08:54:47,844 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 08:55:18,319 - data_collector - INFO - Retrieved 21 records for ABLD
+2026-01-10 08:55:18,374 - data_collector - INFO - ✓ Saved ABLD.AMEX to /data/raw/AMEX/20260110/ABLD.csv (1,997 bytes)
+2026-01-10 08:55:18,404 - data_collector - INFO - Saved 5 records to database
+2026-01-10 08:55:18,406 - data_collector - INFO -   ✓ 21 records
+2026-01-10 08:55:18,408 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 08:55:20,419 - data_collector - INFO - 
+[12/20] ABLG: Abacus Fcf International Leaders ETF
+2026-01-10 08:55:20,421 - data_collector - INFO - Fetching d data for ABLG.AMEX
+2026-01-10 08:55:20,841 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 08:55:51,343 - data_collector - INFO - Retrieved 21 records for ABLG
+2026-01-10 08:55:51,388 - data_collector - INFO - ✓ Saved ABLG.AMEX to /data/raw/AMEX/20260110/ABLG.csv (2,033 bytes)
+2026-01-10 08:55:51,422 - data_collector - INFO - Saved 5 records to database
+2026-01-10 08:55:51,423 - data_collector - INFO -   ✓ 21 records
+2026-01-10 08:55:51,425 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 08:55:53,428 - data_collector - INFO - 
+[13/20] ABLS: Abacus Fcf Small Cap Leaders ETF
+2026-01-10 08:55:53,429 - data_collector - INFO - Fetching d data for ABLS.AMEX
+2026-01-10 08:55:53,811 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 08:56:24,613 - data_collector - INFO - Retrieved 21 records for ABLS
+2026-01-10 08:56:24,647 - data_collector - INFO - ✓ Saved ABLS.AMEX to /data/raw/AMEX/20260110/ABLS.csv (2,104 bytes)
+2026-01-10 08:56:24,683 - data_collector - INFO - Saved 5 records to database
+2026-01-10 08:56:24,685 - data_collector - INFO -   ✓ 21 records
+2026-01-10 08:56:24,687 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 08:56:26,691 - data_collector - INFO - 
+[14/20] ABNY: Yieldmax Abnb Option Income Strategy ETF
+2026-01-10 08:56:26,692 - data_collector - INFO - Fetching d data for ABNY.AMEX
+2026-01-10 08:56:27,077 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 08:56:58,004 - data_collector - INFO - Retrieved 21 records for ABNY
+2026-01-10 08:56:58,037 - data_collector - INFO - ✓ Saved ABNY.AMEX to /data/raw/AMEX/20260110/ABNY.csv (2,010 bytes)
+2026-01-10 08:56:58,071 - data_collector - INFO - Saved 5 records to database
+2026-01-10 08:56:58,071 - data_collector - INFO -   ✓ 21 records
+2026-01-10 08:56:58,073 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 08:57:00,076 - data_collector - INFO - 
+[15/20] ABOT: Abacus Fcf Innovation Leaders ETF
+2026-01-10 08:57:00,079 - data_collector - INFO - Fetching d data for ABOT.AMEX
+2026-01-10 08:57:00,463 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 08:57:31,273 - data_collector - INFO - Retrieved 21 records for ABOT
+2026-01-10 08:57:31,324 - data_collector - INFO - ✓ Saved ABOT.AMEX to /data/raw/AMEX/20260110/ABOT.csv (2,062 bytes)
+2026-01-10 08:57:31,354 - data_collector - INFO - Saved 5 records to database
+2026-01-10 08:57:31,355 - data_collector - INFO -   ✓ 21 records
+2026-01-10 08:57:31,357 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 08:57:33,370 - data_collector - INFO - 
+[16/20] ABXB: Abacus Flexible Bond Leaders ETF
+2026-01-10 08:57:33,371 - data_collector - INFO - Fetching d data for ABXB.AMEX
+2026-01-10 08:57:33,763 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 08:58:04,252 - data_collector - INFO - Retrieved 21 records for ABXB
+2026-01-10 08:58:04,281 - data_collector - INFO - ✓ Saved ABXB.AMEX to /data/raw/AMEX/20260110/ABXB.csv (2,032 bytes)
+2026-01-10 08:58:04,320 - data_collector - INFO - Saved 5 records to database
+2026-01-10 08:58:04,321 - data_collector - INFO -   ✓ 21 records
+2026-01-10 08:58:04,322 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 08:58:06,325 - data_collector - INFO - 
+[17/20] ACCS: Access Newswire Inc
+2026-01-10 08:58:06,327 - data_collector - INFO - Fetching d data for ACCS.AMEX
+2026-01-10 08:58:06,728 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 08:59:29,991 - __main__ - INFO - 🚀 STARTING DATA INGESTION SCHEDULER
+2026-01-10 08:59:29,992 - __main__ - INFO - Configuration:
+2026-01-10 08:59:29,993 - __main__ - INFO -   - Interval: 6 hours
+2026-01-10 08:59:29,994 - __main__ - INFO -   - Symbols per exchange: 10
+2026-01-10 08:59:29,995 - __main__ - INFO -   - Days of data: 30
+2026-01-10 08:59:29,998 - __main__ - INFO -   - Data directory: /data
+2026-01-10 08:59:29,999 - __main__ - INFO - ============================================================
+2026-01-10 08:59:30,002 - __main__ - INFO - 
+🔄 CYCLE #1 - 2026-01-10 08:59:30
+2026-01-10 08:59:30,775 - __main__ - INFO - ============================================================
+2026-01-10 08:59:30,776 - __main__ - INFO - STARTING DATA COLLECTION CYCLE
+2026-01-10 08:59:30,778 - __main__ - INFO - ============================================================
+2026-01-10 08:59:30,778 - __main__ - INFO - 📊 STEP 1: Collecting stock data and uploading to HDFS...
+2026-01-10 08:59:30,780 - data_collector - INFO - ============================================================
+2026-01-10 08:59:30,780 - data_collector - INFO - EODData COLLECTOR - STARTING (ALL EXCHANGES)
+2026-01-10 08:59:30,782 - data_collector - INFO - Start time: 2026-01-10 08:59:30
+2026-01-10 08:59:30,783 - data_collector - INFO - Config: 20 symbols/exchange, 30 days of data
+2026-01-10 08:59:30,784 - data_collector - INFO - NOTE: Each exchange will be uploaded to HDFS immediately after collection
+2026-01-10 08:59:30,785 - data_collector - INFO - ============================================================
+2026-01-10 08:59:30,787 - data_collector - INFO - Using API key: 1rwJF2a5...
+2026-01-10 08:59:30,858 - data_collector - INFO - Testing API connection...
+2026-01-10 08:59:30,859 - data_collector - INFO - Fetching ALL exchanges list...
+2026-01-10 08:59:32,162 - data_collector - INFO - Found 29 total exchanges
+2026-01-10 08:59:32,164 - data_collector - INFO - API connection successful. Found 29 exchanges
+2026-01-10 08:59:32,166 - data_collector - INFO - Getting ALL exchanges...
+2026-01-10 08:59:32,170 - data_collector - INFO - Fetching ALL exchanges list...
+2026-01-10 08:59:33,266 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:00:04,900 - data_collector - INFO - Found 29 total exchanges
+2026-01-10 09:00:04,910 - data_collector - INFO - Found 29 exchanges
+2026-01-10 09:00:04,918 - data_collector - INFO - Processing 29 exchanges...
+2026-01-10 09:00:04,920 - data_collector - INFO - 
+============================================================
+2026-01-10 09:00:04,922 - data_collector - INFO - STARTING COLLECTION FOR AMEX (American Stock Exchange)
+2026-01-10 09:00:04,923 - data_collector - INFO - Progress: 1/29
+2026-01-10 09:00:04,926 - data_collector - INFO - ============================================================
+2026-01-10 09:00:04,927 - data_collector - INFO - 
+============================================================
+2026-01-10 09:00:04,932 - data_collector - INFO - COLLECTING FROM AMEX
+2026-01-10 09:00:04,934 - data_collector - INFO - Config: 20 symbols, 30 days of data
+2026-01-10 09:00:04,935 - data_collector - INFO - ============================================================
+2026-01-10 09:00:04,937 - data_collector - INFO - Fetching symbols for AMEX...
+2026-01-10 09:00:05,323 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:02:14,935 - data_collector - INFO - Found 20 symbols for AMEX
+2026-01-10 09:02:14,937 - data_collector - INFO - Processing 20 symbols...
+2026-01-10 09:02:14,938 - data_collector - INFO - 
+[1/20] AAA: First Priority Clo Bond ETF
+2026-01-10 09:02:14,942 - data_collector - INFO - Fetching d data for AAA.AMEX
+2026-01-10 09:02:15,395 - data_collector - INFO - Retrieved 21 records for AAA
+2026-01-10 09:02:15,429 - data_collector - INFO - ✓ Saved AAA.AMEX to /data/raw/AMEX/20260110/AAA.csv (1,942 bytes)
+2026-01-10 09:02:15,475 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:02:15,476 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:02:15,480 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:02:17,483 - data_collector - INFO - 
+[2/20] AAAA: Amplius Aggressive Asset Allocation ETF
+2026-01-10 09:02:17,487 - data_collector - INFO - Fetching d data for AAAA.AMEX
+2026-01-10 09:02:17,885 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:02:48,371 - data_collector - INFO - Retrieved 21 records for AAAA
+2026-01-10 09:02:48,463 - data_collector - INFO - ✓ Saved AAAA.AMEX to /data/raw/AMEX/20260110/AAAA.csv (2,021 bytes)
+2026-01-10 09:02:48,488 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:02:48,492 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:02:48,496 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:02:50,500 - data_collector - INFO - 
+[3/20] AAAU: GS Physical Gold ETF
+2026-01-10 09:02:50,505 - data_collector - INFO - Fetching d data for AAAU.AMEX
+2026-01-10 09:02:50,891 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:03:21,361 - data_collector - INFO - Retrieved 21 records for AAAU
+2026-01-10 09:03:21,389 - data_collector - INFO - ✓ Saved AAAU.AMEX to /data/raw/AMEX/20260110/AAAU.csv (2,042 bytes)
+2026-01-10 09:03:21,427 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:03:21,428 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:03:21,431 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:03:23,435 - data_collector - INFO - 
+[4/20] AAPR: Innovator Equity Defined Protection ETF Apr 26
+2026-01-10 09:03:23,435 - data_collector - INFO - Fetching d data for AAPR.AMEX
+2026-01-10 09:03:23,835 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:03:54,317 - data_collector - INFO - Retrieved 21 records for AAPR
+2026-01-10 09:03:54,353 - data_collector - INFO - ✓ Saved AAPR.AMEX to /data/raw/AMEX/20260110/AAPR.csv (2,011 bytes)
+2026-01-10 09:03:54,387 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:03:54,390 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:03:54,394 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:03:56,396 - data_collector - INFO - 
+[5/20] AAPW: Roundhill Aapl Weeklypay ETF
+2026-01-10 09:03:56,397 - data_collector - INFO - Fetching d data for AAPW.AMEX
+2026-01-10 09:03:56,776 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:04:27,231 - data_collector - INFO - Retrieved 21 records for AAPW
+2026-01-10 09:04:27,279 - data_collector - INFO - ✓ Saved AAPW.AMEX to /data/raw/AMEX/20260110/AAPW.csv (1,983 bytes)
+2026-01-10 09:04:27,314 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:04:27,319 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:04:27,327 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:04:29,330 - data_collector - INFO - 
+[6/20] AAPX: T-Rex 2X Long Apple Daily Target ETF
+2026-01-10 09:04:29,331 - data_collector - INFO - Fetching d data for AAPX.AMEX
+2026-01-10 09:04:29,733 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:05:00,188 - data_collector - INFO - Retrieved 21 records for AAPX
+2026-01-10 09:05:00,245 - data_collector - INFO - ✓ Saved AAPX.AMEX to /data/raw/AMEX/20260110/AAPX.csv (2,010 bytes)
+2026-01-10 09:05:00,297 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:05:00,299 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:05:00,303 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:05:02,306 - data_collector - INFO - 
+[7/20] AAPY: Kurv Yield Premium Apple [Aapl] ETF
+2026-01-10 09:05:02,307 - data_collector - INFO - Fetching d data for AAPY.AMEX
+2026-01-10 09:05:02,752 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:05:33,265 - data_collector - INFO - Retrieved 21 records for AAPY
+2026-01-10 09:05:33,301 - data_collector - INFO - ✓ Saved AAPY.AMEX to /data/raw/AMEX/20260110/AAPY.csv (2,031 bytes)
+2026-01-10 09:05:33,328 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:05:33,330 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:05:33,332 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:05:35,333 - data_collector - INFO - 
+[8/20] AAUM: Tema Alternative Asset Managers ETF
+2026-01-10 09:05:35,336 - data_collector - INFO - Fetching d data for AAUM.AMEX
+2026-01-10 09:05:35,728 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:06:06,179 - data_collector - INFO - Retrieved 21 records for AAUM
+2026-01-10 09:06:06,216 - data_collector - INFO - ✓ Saved AAUM.AMEX to /data/raw/AMEX/20260110/AAUM.csv (2,098 bytes)
+2026-01-10 09:06:06,244 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:06:06,247 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:06:06,249 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:06:08,252 - data_collector - INFO - 
+[9/20] ABEQ: Absolute Core Strategy ETF
+2026-01-10 09:06:08,253 - data_collector - INFO - Fetching d data for ABEQ.AMEX
+2026-01-10 09:06:08,642 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:06:39,530 - data_collector - INFO - Retrieved 21 records for ABEQ
+2026-01-10 09:06:39,561 - data_collector - INFO - ✓ Saved ABEQ.AMEX to /data/raw/AMEX/20260110/ABEQ.csv (1,987 bytes)
+2026-01-10 09:06:39,596 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:06:39,601 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:06:39,606 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:06:41,609 - data_collector - INFO - 
+[10/20] ABFL: Abacus Fcf Leaders ETF
+2026-01-10 09:06:41,609 - data_collector - INFO - Fetching d data for ABFL.AMEX
+2026-01-10 09:06:42,012 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:07:12,517 - data_collector - INFO - Retrieved 21 records for ABFL
+2026-01-10 09:07:12,547 - data_collector - INFO - ✓ Saved ABFL.AMEX to /data/raw/AMEX/20260110/ABFL.csv (2,004 bytes)
+2026-01-10 09:07:12,571 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:07:12,573 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:07:12,575 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:07:14,577 - data_collector - INFO - 
+[11/20] ABLD: Abacus Fcf Real Assets Leaders ETF
+2026-01-10 09:07:14,578 - data_collector - INFO - Fetching d data for ABLD.AMEX
+2026-01-10 09:07:14,958 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:07:46,249 - data_collector - INFO - Retrieved 21 records for ABLD
+2026-01-10 09:07:46,274 - data_collector - INFO - ✓ Saved ABLD.AMEX to /data/raw/AMEX/20260110/ABLD.csv (1,997 bytes)
+2026-01-10 09:07:46,308 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:07:46,309 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:07:46,310 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:07:48,312 - data_collector - INFO - 
+[12/20] ABLG: Abacus Fcf International Leaders ETF
+2026-01-10 09:07:48,314 - data_collector - INFO - Fetching d data for ABLG.AMEX
+2026-01-10 09:07:48,704 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:09:20,300 - __main__ - INFO - 🚀 STARTING DATA INGESTION SCHEDULER
+2026-01-10 09:09:20,302 - __main__ - INFO - Configuration:
+2026-01-10 09:09:20,303 - __main__ - INFO -   - Interval: 6 hours
+2026-01-10 09:09:20,304 - __main__ - INFO -   - Symbols per exchange: 10
+2026-01-10 09:09:20,306 - __main__ - INFO -   - Days of data: 30
+2026-01-10 09:09:20,307 - __main__ - INFO -   - Data directory: /data
+2026-01-10 09:09:20,308 - __main__ - INFO - ============================================================
+2026-01-10 09:09:20,309 - __main__ - INFO - 
+🔄 CYCLE #1 - 2026-01-10 09:09:20
+2026-01-10 09:09:21,196 - __main__ - INFO - ============================================================
+2026-01-10 09:09:21,197 - __main__ - INFO - STARTING DATA COLLECTION CYCLE
+2026-01-10 09:09:21,200 - __main__ - INFO - ============================================================
+2026-01-10 09:09:21,202 - __main__ - INFO - 📊 STEP 1: Collecting stock data and uploading to HDFS...
+2026-01-10 09:09:21,203 - data_collector - INFO - ============================================================
+2026-01-10 09:09:21,204 - data_collector - INFO - EODData COLLECTOR - STARTING (ALL EXCHANGES)
+2026-01-10 09:09:21,206 - data_collector - INFO - Start time: 2026-01-10 09:09:21
+2026-01-10 09:09:21,207 - data_collector - INFO - Config: 20 symbols/exchange, 30 days of data
+2026-01-10 09:09:21,209 - data_collector - INFO - NOTE: Each exchange will be uploaded to HDFS immediately after collection
+2026-01-10 09:09:21,210 - data_collector - INFO - ============================================================
+2026-01-10 09:09:21,211 - data_collector - INFO - Using API key: 1rwJF2a5...
+2026-01-10 09:09:21,325 - data_collector - INFO - Testing API connection...
+2026-01-10 09:09:21,326 - data_collector - INFO - Fetching ALL exchanges list...
+2026-01-10 09:09:23,057 - data_collector - INFO - Found 29 total exchanges
+2026-01-10 09:09:23,059 - data_collector - INFO - API connection successful. Found 29 exchanges
+2026-01-10 09:09:23,061 - data_collector - INFO - Getting ALL exchanges...
+2026-01-10 09:09:23,063 - data_collector - INFO - Fetching ALL exchanges list...
+2026-01-10 09:09:23,768 - data_collector - INFO - Found 29 total exchanges
+2026-01-10 09:09:23,770 - data_collector - INFO - Found 29 exchanges
+2026-01-10 09:09:23,772 - data_collector - INFO - Processing 29 exchanges...
+2026-01-10 09:09:23,774 - data_collector - INFO - 
+============================================================
+2026-01-10 09:09:23,777 - data_collector - INFO - STARTING COLLECTION FOR AMEX (American Stock Exchange)
+2026-01-10 09:09:23,778 - data_collector - INFO - Progress: 1/29
+2026-01-10 09:09:23,780 - data_collector - INFO - ============================================================
+2026-01-10 09:09:23,781 - data_collector - INFO - 
+============================================================
+2026-01-10 09:09:23,782 - data_collector - INFO - COLLECTING FROM AMEX
+2026-01-10 09:09:23,784 - data_collector - INFO - Config: 20 symbols, 30 days of data
+2026-01-10 09:09:23,785 - data_collector - INFO - ============================================================
+2026-01-10 09:09:23,787 - data_collector - INFO - Fetching symbols for AMEX...
+2026-01-10 09:11:16,957 - data_collector - INFO - Found 20 symbols for AMEX
+2026-01-10 09:11:16,960 - data_collector - INFO - Processing 20 symbols...
+2026-01-10 09:11:16,961 - data_collector - INFO - 
+[1/20] AAA: First Priority Clo Bond ETF
+2026-01-10 09:11:16,961 - data_collector - INFO - Fetching d data for AAA.AMEX
+2026-01-10 09:11:18,321 - data_collector - INFO - Retrieved 21 records for AAA
+2026-01-10 09:11:18,365 - data_collector - INFO - ✓ Saved AAA.AMEX to /data/raw/AMEX/20260110/AAA.csv (1,942 bytes)
+2026-01-10 09:11:18,445 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:11:18,445 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:11:18,448 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:11:20,451 - data_collector - INFO - 
+[2/20] AAAA: Amplius Aggressive Asset Allocation ETF
+2026-01-10 09:11:20,453 - data_collector - INFO - Fetching d data for AAAA.AMEX
+2026-01-10 09:11:20,874 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:11:52,054 - data_collector - INFO - Retrieved 21 records for AAAA
+2026-01-10 09:11:52,082 - data_collector - INFO - ✓ Saved AAAA.AMEX to /data/raw/AMEX/20260110/AAAA.csv (2,021 bytes)
+2026-01-10 09:11:52,111 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:11:52,113 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:11:52,115 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:11:54,127 - data_collector - INFO - 
+[3/20] AAAU: GS Physical Gold ETF
+2026-01-10 09:11:54,128 - data_collector - INFO - Fetching d data for AAAU.AMEX
+2026-01-10 09:11:54,509 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:12:25,688 - data_collector - INFO - Retrieved 21 records for AAAU
+2026-01-10 09:12:25,727 - data_collector - INFO - ✓ Saved AAAU.AMEX to /data/raw/AMEX/20260110/AAAU.csv (2,042 bytes)
+2026-01-10 09:12:25,749 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:12:25,753 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:12:25,759 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:12:27,768 - data_collector - INFO - 
+[4/20] AAPR: Innovator Equity Defined Protection ETF Apr 26
+2026-01-10 09:12:27,772 - data_collector - INFO - Fetching d data for AAPR.AMEX
+2026-01-10 09:12:28,176 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:12:59,280 - data_collector - INFO - Retrieved 21 records for AAPR
+2026-01-10 09:12:59,321 - data_collector - INFO - ✓ Saved AAPR.AMEX to /data/raw/AMEX/20260110/AAPR.csv (2,011 bytes)
+2026-01-10 09:12:59,353 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:12:59,355 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:12:59,357 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:13:01,361 - data_collector - INFO - 
+[5/20] AAPW: Roundhill Aapl Weeklypay ETF
+2026-01-10 09:13:01,363 - data_collector - INFO - Fetching d data for AAPW.AMEX
+2026-01-10 09:13:01,781 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:13:32,615 - data_collector - INFO - Retrieved 21 records for AAPW
+2026-01-10 09:13:32,654 - data_collector - INFO - ✓ Saved AAPW.AMEX to /data/raw/AMEX/20260110/AAPW.csv (1,983 bytes)
+2026-01-10 09:13:32,681 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:13:32,682 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:13:32,683 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:13:34,687 - data_collector - INFO - 
+[6/20] AAPX: T-Rex 2X Long Apple Daily Target ETF
+2026-01-10 09:13:34,689 - data_collector - INFO - Fetching d data for AAPX.AMEX
+2026-01-10 09:13:35,271 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:14:06,096 - data_collector - INFO - Retrieved 21 records for AAPX
+2026-01-10 09:14:06,132 - data_collector - INFO - ✓ Saved AAPX.AMEX to /data/raw/AMEX/20260110/AAPX.csv (2,010 bytes)
+2026-01-10 09:14:06,161 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:14:06,163 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:14:06,168 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:14:08,172 - data_collector - INFO - 
+[7/20] AAPY: Kurv Yield Premium Apple [Aapl] ETF
+2026-01-10 09:14:08,174 - data_collector - INFO - Fetching d data for AAPY.AMEX
+2026-01-10 09:14:08,573 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:14:39,596 - data_collector - INFO - Retrieved 21 records for AAPY
+2026-01-10 09:14:39,645 - data_collector - INFO - ✓ Saved AAPY.AMEX to /data/raw/AMEX/20260110/AAPY.csv (2,031 bytes)
+2026-01-10 09:14:39,677 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:14:39,681 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:14:39,683 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:14:41,687 - data_collector - INFO - 
+[8/20] AAUM: Tema Alternative Asset Managers ETF
+2026-01-10 09:14:41,689 - data_collector - INFO - Fetching d data for AAUM.AMEX
+2026-01-10 09:14:42,068 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:15:12,531 - data_collector - INFO - Retrieved 21 records for AAUM
+2026-01-10 09:15:12,555 - data_collector - INFO - ✓ Saved AAUM.AMEX to /data/raw/AMEX/20260110/AAUM.csv (2,098 bytes)
+2026-01-10 09:15:12,573 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:15:12,574 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:15:12,575 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:15:14,570 - data_collector - INFO - 
+[9/20] ABEQ: Absolute Core Strategy ETF
+2026-01-10 09:15:14,572 - data_collector - INFO - Fetching d data for ABEQ.AMEX
+2026-01-10 09:15:15,008 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:15:45,536 - data_collector - INFO - Retrieved 21 records for ABEQ
+2026-01-10 09:15:45,586 - data_collector - INFO - ✓ Saved ABEQ.AMEX to /data/raw/AMEX/20260110/ABEQ.csv (1,987 bytes)
+2026-01-10 09:15:45,607 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:15:45,608 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:15:45,610 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:15:47,611 - data_collector - INFO - 
+[10/20] ABFL: Abacus Fcf Leaders ETF
+2026-01-10 09:15:47,612 - data_collector - INFO - Fetching d data for ABFL.AMEX
+2026-01-10 09:15:47,995 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:16:18,527 - data_collector - INFO - Retrieved 21 records for ABFL
+2026-01-10 09:16:18,571 - data_collector - INFO - ✓ Saved ABFL.AMEX to /data/raw/AMEX/20260110/ABFL.csv (2,004 bytes)
+2026-01-10 09:16:18,599 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:16:18,601 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:16:18,603 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:16:20,610 - data_collector - INFO - 
+[11/20] ABLD: Abacus Fcf Real Assets Leaders ETF
+2026-01-10 09:16:20,614 - data_collector - INFO - Fetching d data for ABLD.AMEX
+2026-01-10 09:16:21,000 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:16:51,766 - data_collector - INFO - Retrieved 21 records for ABLD
+2026-01-10 09:16:51,808 - data_collector - INFO - ✓ Saved ABLD.AMEX to /data/raw/AMEX/20260110/ABLD.csv (1,997 bytes)
+2026-01-10 09:16:51,839 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:16:51,849 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:16:51,852 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:16:53,857 - data_collector - INFO - 
+[12/20] ABLG: Abacus Fcf International Leaders ETF
+2026-01-10 09:16:53,859 - data_collector - INFO - Fetching d data for ABLG.AMEX
+2026-01-10 09:16:54,251 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:17:24,961 - data_collector - INFO - Retrieved 21 records for ABLG
+2026-01-10 09:17:25,018 - data_collector - INFO - ✓ Saved ABLG.AMEX to /data/raw/AMEX/20260110/ABLG.csv (2,033 bytes)
+2026-01-10 09:17:25,047 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:17:25,049 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:17:25,052 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:17:27,061 - data_collector - INFO - 
+[13/20] ABLS: Abacus Fcf Small Cap Leaders ETF
+2026-01-10 09:17:27,064 - data_collector - INFO - Fetching d data for ABLS.AMEX
+2026-01-10 09:17:27,477 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:17:57,971 - data_collector - INFO - Retrieved 21 records for ABLS
+2026-01-10 09:17:57,998 - data_collector - INFO - ✓ Saved ABLS.AMEX to /data/raw/AMEX/20260110/ABLS.csv (2,104 bytes)
+2026-01-10 09:17:58,024 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:17:58,025 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:17:58,027 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:18:00,030 - data_collector - INFO - 
+[14/20] ABNY: Yieldmax Abnb Option Income Strategy ETF
+2026-01-10 09:18:00,031 - data_collector - INFO - Fetching d data for ABNY.AMEX
+2026-01-10 09:18:00,411 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:18:31,305 - data_collector - INFO - Retrieved 21 records for ABNY
+2026-01-10 09:18:31,330 - data_collector - INFO - ✓ Saved ABNY.AMEX to /data/raw/AMEX/20260110/ABNY.csv (2,010 bytes)
+2026-01-10 09:18:31,353 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:18:31,354 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:18:31,359 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:18:33,362 - data_collector - INFO - 
+[15/20] ABOT: Abacus Fcf Innovation Leaders ETF
+2026-01-10 09:18:33,363 - data_collector - INFO - Fetching d data for ABOT.AMEX
+2026-01-10 09:18:33,755 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:19:04,590 - data_collector - INFO - Retrieved 21 records for ABOT
+2026-01-10 09:19:04,620 - data_collector - INFO - ✓ Saved ABOT.AMEX to /data/raw/AMEX/20260110/ABOT.csv (2,062 bytes)
+2026-01-10 09:19:04,652 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:19:04,653 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:19:04,655 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:19:06,658 - data_collector - INFO - 
+[16/20] ABXB: Abacus Flexible Bond Leaders ETF
+2026-01-10 09:19:06,659 - data_collector - INFO - Fetching d data for ABXB.AMEX
+2026-01-10 09:19:07,057 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:19:37,551 - data_collector - INFO - Retrieved 21 records for ABXB
+2026-01-10 09:19:37,579 - data_collector - INFO - ✓ Saved ABXB.AMEX to /data/raw/AMEX/20260110/ABXB.csv (2,032 bytes)
+2026-01-10 09:19:37,609 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:19:37,610 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:19:37,611 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:19:39,614 - data_collector - INFO - 
+[17/20] ACCS: Access Newswire Inc
+2026-01-10 09:19:39,616 - data_collector - INFO - Fetching d data for ACCS.AMEX
+2026-01-10 09:19:40,331 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:20:10,846 - data_collector - INFO - Retrieved 21 records for ACCS
+2026-01-10 09:20:10,871 - data_collector - INFO - ✓ Saved ACCS.AMEX to /data/raw/AMEX/20260110/ACCS.csv (1,901 bytes)
+2026-01-10 09:20:10,920 - data_collector - INFO - Saved 5 records to database
+2026-01-10 09:20:10,922 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:20:10,924 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:20:12,927 - data_collector - INFO - 
+[18/20] ACEI: Innovator Equity Autocallable Income Strategy ET
+2026-01-10 09:20:12,928 - data_collector - INFO - Fetching d data for ACEI.AMEX
+2026-01-10 09:20:13,307 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:20:44,237 - data_collector - INFO - Retrieved 21 records for ACEI
+2026-01-10 09:20:44,263 - data_collector - INFO - ✓ Saved ACEI.AMEX to /data/raw/AMEX/20260110/ACEI.csv (2,024 bytes)
+2026-01-10 09:20:44,291 - data_collector - INFO - Saved 5 records to database
+2026-01-10 09:20:44,292 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:20:44,295 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:20:46,293 - data_collector - INFO - 
+[19/20] ACES: Alps Clean Energy ETF
+2026-01-10 09:20:46,295 - data_collector - INFO - Fetching d data for ACES.AMEX
+2026-01-10 09:20:46,770 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:21:17,659 - data_collector - INFO - Retrieved 21 records for ACES
+2026-01-10 09:21:17,709 - data_collector - INFO - ✓ Saved ACES.AMEX to /data/raw/AMEX/20260110/ACES.csv (1,997 bytes)
+2026-01-10 09:21:17,748 - data_collector - INFO - Saved 5 records to database
+2026-01-10 09:21:17,750 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:21:17,752 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:21:19,761 - data_collector - INFO - 
+[20/20] ACGR: American Century Large Cap Growth ETF
+2026-01-10 09:21:19,763 - data_collector - INFO - Fetching d data for ACGR.AMEX
+2026-01-10 09:21:20,158 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:21:50,671 - data_collector - INFO - Retrieved 21 records for ACGR
+2026-01-10 09:21:50,716 - data_collector - INFO - ✓ Saved ACGR.AMEX to /data/raw/AMEX/20260110/ACGR.csv (2,058 bytes)
+2026-01-10 09:21:50,751 - data_collector - INFO - Saved 5 records to database
+2026-01-10 09:21:50,753 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:21:50,754 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:21:50,756 - data_collector - INFO - 
+📤 Uploading AMEX data to HDFS...
+2026-01-10 09:21:50,769 - data_collector - INFO - 📤 Uploading AMEX data to HDFS...
+2026-01-10 09:21:50,769 - hdfs_uploader - INFO - 📤 Uploading files for exchange: AMEX
+2026-01-10 09:21:50,770 - hdfs_uploader - INFO - Attempting to connect to HDFS (attempt 1/3)
+2026-01-10 09:21:50,772 - hdfs_uploader - INFO - Using WebHDFS URL: http://namenode:9870
+2026-01-10 09:21:50,773 - hdfs_uploader - INFO - HDFS User: root
+2026-01-10 09:21:50,773 - hdfs_uploader - INFO - HDFS Base Path: /stock_data
+2026-01-10 09:21:50,815 - hdfs.client - INFO - Instantiated <InsecureClient(url='http://namenode:9870')>.
+2026-01-10 09:21:50,816 - hdfs.client - INFO - Fetching status for '/'.
+2026-01-10 09:21:50,827 - hdfs_uploader - INFO - ✓ Successfully connected to HDFS
+2026-01-10 09:21:50,828 - hdfs_uploader - INFO - HDFS root status: type=DIRECTORY, permission=777
+2026-01-10 09:21:50,829 - hdfs.client - INFO - Fetching status for '/stock_data'.
+2026-01-10 09:21:50,836 - hdfs.client - INFO - Fetching status for '/stock_data/raw'.
+2026-01-10 09:21:50,842 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily'.
+2026-01-10 09:21:50,848 - hdfs.client - INFO - Fetching status for '/stock_data/processed'.
+2026-01-10 09:21:50,857 - hdfs.client - INFO - Fetching status for '/stock_data/reports'.
+2026-01-10 09:21:50,867 - hdfs_uploader - INFO - 📁 Scanning for files in /data/raw/AMEX
+2026-01-10 09:21:50,875 - hdfs_uploader - INFO -   Processing date: 20260104
+2026-01-10 09:21:50,893 - hdfs_uploader - INFO -     Uploading: AAA.csv
+2026-01-10 09:21:50,902 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/AAA.csv (1,954 bytes) to /stock_data/raw/daily/AMEX/20260104/AAA.csv
+2026-01-10 09:21:50,903 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:21:50,909 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/AAA.csv' to '/stock_data/raw/daily/AMEX/20260104/AAA.csv'.
+2026-01-10 09:21:50,910 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/AAA.csv'.
+2026-01-10 09:21:50,929 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/AAA.csv.temp-1768036910917084'.
+2026-01-10 09:21:52,935 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/AAA.csv' recursively.
+2026-01-10 09:21:52,979 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/AAA.csv.temp-1768036910917084' to '/stock_data/raw/daily/AMEX/20260104/AAA.csv'.
+2026-01-10 09:21:52,999 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/AAA.csv'.
+2026-01-10 09:21:53,008 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 1,954 bytes
+2026-01-10 09:21:53,009 - hdfs_uploader - INFO -     ✓ Uploaded AAA.csv
+2026-01-10 09:21:53,022 - hdfs_uploader - INFO -     Uploading: AAAA.csv
+2026-01-10 09:21:53,030 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/AAAA.csv (2,013 bytes) to /stock_data/raw/daily/AMEX/20260104/AAAA.csv
+2026-01-10 09:21:53,031 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:21:53,038 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/AAAA.csv' to '/stock_data/raw/daily/AMEX/20260104/AAAA.csv'.
+2026-01-10 09:21:53,039 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/AAAA.csv'.
+2026-01-10 09:21:53,056 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/AAAA.csv.temp-1768036913046081'.
+2026-01-10 09:21:53,104 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/AAAA.csv' recursively.
+2026-01-10 09:21:53,112 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/AAAA.csv.temp-1768036913046081' to '/stock_data/raw/daily/AMEX/20260104/AAAA.csv'.
+2026-01-10 09:21:53,119 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/AAAA.csv'.
+2026-01-10 09:21:53,126 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,013 bytes
+2026-01-10 09:21:53,127 - hdfs_uploader - INFO -     ✓ Uploaded AAAA.csv
+2026-01-10 09:21:53,135 - hdfs_uploader - INFO -     Uploading: AAAU.csv
+2026-01-10 09:21:53,141 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/AAAU.csv (2,039 bytes) to /stock_data/raw/daily/AMEX/20260104/AAAU.csv
+2026-01-10 09:21:53,142 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:21:53,149 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/AAAU.csv' to '/stock_data/raw/daily/AMEX/20260104/AAAU.csv'.
+2026-01-10 09:21:53,151 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/AAAU.csv'.
+2026-01-10 09:21:53,169 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/AAAU.csv.temp-1768036913158407'.
+2026-01-10 09:21:53,212 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/AAAU.csv' recursively.
+2026-01-10 09:21:53,220 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/AAAU.csv.temp-1768036913158407' to '/stock_data/raw/daily/AMEX/20260104/AAAU.csv'.
+2026-01-10 09:21:53,229 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/AAAU.csv'.
+2026-01-10 09:21:53,235 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,039 bytes
+2026-01-10 09:21:53,236 - hdfs_uploader - INFO -     ✓ Uploaded AAAU.csv
+2026-01-10 09:21:53,247 - hdfs_uploader - INFO -     Uploading: AAPR.csv
+2026-01-10 09:21:53,256 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/AAPR.csv (2,011 bytes) to /stock_data/raw/daily/AMEX/20260104/AAPR.csv
+2026-01-10 09:21:53,257 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:21:53,263 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/AAPR.csv' to '/stock_data/raw/daily/AMEX/20260104/AAPR.csv'.
+2026-01-10 09:21:53,264 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/AAPR.csv'.
+2026-01-10 09:21:53,284 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/AAPR.csv.temp-1768036913271139'.
+2026-01-10 09:21:53,327 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/AAPR.csv' recursively.
+2026-01-10 09:21:53,335 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/AAPR.csv.temp-1768036913271139' to '/stock_data/raw/daily/AMEX/20260104/AAPR.csv'.
+2026-01-10 09:21:53,343 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/AAPR.csv'.
+2026-01-10 09:21:53,348 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,011 bytes
+2026-01-10 09:21:53,349 - hdfs_uploader - INFO -     ✓ Uploaded AAPR.csv
+2026-01-10 09:21:53,359 - hdfs_uploader - INFO -     Uploading: AAPW.csv
+2026-01-10 09:21:53,366 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/AAPW.csv (1,995 bytes) to /stock_data/raw/daily/AMEX/20260104/AAPW.csv
+2026-01-10 09:21:53,367 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:21:53,375 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/AAPW.csv' to '/stock_data/raw/daily/AMEX/20260104/AAPW.csv'.
+2026-01-10 09:21:53,376 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/AAPW.csv'.
+2026-01-10 09:21:53,393 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/AAPW.csv.temp-1768036913383626'.
+2026-01-10 09:21:53,440 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/AAPW.csv' recursively.
+2026-01-10 09:21:53,449 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/AAPW.csv.temp-1768036913383626' to '/stock_data/raw/daily/AMEX/20260104/AAPW.csv'.
+2026-01-10 09:21:53,458 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/AAPW.csv'.
+2026-01-10 09:21:53,464 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 1,995 bytes
+2026-01-10 09:21:53,465 - hdfs_uploader - INFO -     ✓ Uploaded AAPW.csv
+2026-01-10 09:21:53,477 - hdfs_uploader - INFO -     Uploading: AAPX.csv
+2026-01-10 09:21:53,487 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/AAPX.csv (2,007 bytes) to /stock_data/raw/daily/AMEX/20260104/AAPX.csv
+2026-01-10 09:21:53,487 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:21:53,493 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/AAPX.csv' to '/stock_data/raw/daily/AMEX/20260104/AAPX.csv'.
+2026-01-10 09:21:53,494 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/AAPX.csv'.
+2026-01-10 09:21:53,511 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/AAPX.csv.temp-1768036913499554'.
+2026-01-10 09:21:53,559 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/AAPX.csv' recursively.
+2026-01-10 09:21:53,567 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/AAPX.csv.temp-1768036913499554' to '/stock_data/raw/daily/AMEX/20260104/AAPX.csv'.
+2026-01-10 09:21:53,576 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/AAPX.csv'.
+2026-01-10 09:21:53,583 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,007 bytes
+2026-01-10 09:21:53,584 - hdfs_uploader - INFO -     ✓ Uploaded AAPX.csv
+2026-01-10 09:21:53,596 - hdfs_uploader - INFO -     Uploading: AAPY.csv
+2026-01-10 09:21:53,606 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/AAPY.csv (2,018 bytes) to /stock_data/raw/daily/AMEX/20260104/AAPY.csv
+2026-01-10 09:21:53,606 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:21:53,612 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/AAPY.csv' to '/stock_data/raw/daily/AMEX/20260104/AAPY.csv'.
+2026-01-10 09:21:53,613 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/AAPY.csv'.
+2026-01-10 09:21:53,627 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/AAPY.csv.temp-1768036913619009'.
+2026-01-10 09:21:53,674 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/AAPY.csv' recursively.
+2026-01-10 09:21:53,681 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/AAPY.csv.temp-1768036913619009' to '/stock_data/raw/daily/AMEX/20260104/AAPY.csv'.
+2026-01-10 09:21:53,694 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/AAPY.csv'.
+2026-01-10 09:21:53,700 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,018 bytes
+2026-01-10 09:21:53,701 - hdfs_uploader - INFO -     ✓ Uploaded AAPY.csv
+2026-01-10 09:21:53,712 - hdfs_uploader - INFO -     Uploading: AAUM.csv
+2026-01-10 09:21:53,721 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/AAUM.csv (2,102 bytes) to /stock_data/raw/daily/AMEX/20260104/AAUM.csv
+2026-01-10 09:21:53,722 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:21:53,727 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/AAUM.csv' to '/stock_data/raw/daily/AMEX/20260104/AAUM.csv'.
+2026-01-10 09:21:53,728 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/AAUM.csv'.
+2026-01-10 09:21:53,746 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/AAUM.csv.temp-1768036913735041'.
+2026-01-10 09:21:54,195 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/AAUM.csv' recursively.
+2026-01-10 09:21:54,208 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/AAUM.csv.temp-1768036913735041' to '/stock_data/raw/daily/AMEX/20260104/AAUM.csv'.
+2026-01-10 09:21:54,220 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/AAUM.csv'.
+2026-01-10 09:21:54,229 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,102 bytes
+2026-01-10 09:21:54,233 - hdfs_uploader - INFO -     ✓ Uploaded AAUM.csv
+2026-01-10 09:21:54,245 - hdfs_uploader - INFO -     Uploading: ABEQ.csv
+2026-01-10 09:21:54,265 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/ABEQ.csv (1,995 bytes) to /stock_data/raw/daily/AMEX/20260104/ABEQ.csv
+2026-01-10 09:21:54,267 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:21:54,274 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/ABEQ.csv' to '/stock_data/raw/daily/AMEX/20260104/ABEQ.csv'.
+2026-01-10 09:21:54,276 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/ABEQ.csv'.
+2026-01-10 09:21:54,302 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/ABEQ.csv.temp-1768036914282877'.
+2026-01-10 09:21:54,355 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/ABEQ.csv' recursively.
+2026-01-10 09:21:54,363 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/ABEQ.csv.temp-1768036914282877' to '/stock_data/raw/daily/AMEX/20260104/ABEQ.csv'.
+2026-01-10 09:21:54,374 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/ABEQ.csv'.
+2026-01-10 09:21:54,383 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 1,995 bytes
+2026-01-10 09:21:54,385 - hdfs_uploader - INFO -     ✓ Uploaded ABEQ.csv
+2026-01-10 09:21:54,402 - hdfs_uploader - INFO -     Uploading: ABFL.csv
+2026-01-10 09:21:54,410 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/ABFL.csv (2,001 bytes) to /stock_data/raw/daily/AMEX/20260104/ABFL.csv
+2026-01-10 09:21:54,411 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:21:54,416 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/ABFL.csv' to '/stock_data/raw/daily/AMEX/20260104/ABFL.csv'.
+2026-01-10 09:21:54,417 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/ABFL.csv'.
+2026-01-10 09:21:54,437 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/ABFL.csv.temp-1768036914425183'.
+2026-01-10 09:21:54,484 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/ABFL.csv' recursively.
+2026-01-10 09:21:54,493 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/ABFL.csv.temp-1768036914425183' to '/stock_data/raw/daily/AMEX/20260104/ABFL.csv'.
+2026-01-10 09:21:54,502 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/ABFL.csv'.
+2026-01-10 09:21:54,509 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,001 bytes
+2026-01-10 09:21:54,510 - hdfs_uploader - INFO -     ✓ Uploaded ABFL.csv
+2026-01-10 09:21:54,522 - hdfs_uploader - INFO -     Uploading: ABLD.csv
+2026-01-10 09:21:54,532 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/ABLD.csv (2,003 bytes) to /stock_data/raw/daily/AMEX/20260104/ABLD.csv
+2026-01-10 09:21:54,533 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:21:54,539 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/ABLD.csv' to '/stock_data/raw/daily/AMEX/20260104/ABLD.csv'.
+2026-01-10 09:21:54,541 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/ABLD.csv'.
+2026-01-10 09:21:54,558 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/ABLD.csv.temp-1768036914548231'.
+2026-01-10 09:21:54,609 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/ABLD.csv' recursively.
+2026-01-10 09:21:54,616 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/ABLD.csv.temp-1768036914548231' to '/stock_data/raw/daily/AMEX/20260104/ABLD.csv'.
+2026-01-10 09:21:54,624 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/ABLD.csv'.
+2026-01-10 09:21:54,630 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,003 bytes
+2026-01-10 09:21:54,631 - hdfs_uploader - INFO -     ✓ Uploaded ABLD.csv
+2026-01-10 09:21:54,640 - hdfs_uploader - INFO -     Uploading: ABLG.csv
+2026-01-10 09:21:54,647 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/ABLG.csv (2,043 bytes) to /stock_data/raw/daily/AMEX/20260104/ABLG.csv
+2026-01-10 09:21:54,648 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:21:54,655 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/ABLG.csv' to '/stock_data/raw/daily/AMEX/20260104/ABLG.csv'.
+2026-01-10 09:21:54,656 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/ABLG.csv'.
+2026-01-10 09:21:54,674 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/ABLG.csv.temp-1768036914662974'.
+2026-01-10 09:21:54,714 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/ABLG.csv' recursively.
+2026-01-10 09:21:54,722 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/ABLG.csv.temp-1768036914662974' to '/stock_data/raw/daily/AMEX/20260104/ABLG.csv'.
+2026-01-10 09:21:54,731 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/ABLG.csv'.
+2026-01-10 09:21:54,740 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,043 bytes
+2026-01-10 09:21:54,741 - hdfs_uploader - INFO -     ✓ Uploaded ABLG.csv
+2026-01-10 09:21:54,750 - hdfs_uploader - INFO -     Uploading: ABLS.csv
+2026-01-10 09:21:54,757 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/ABLS.csv (2,100 bytes) to /stock_data/raw/daily/AMEX/20260104/ABLS.csv
+2026-01-10 09:21:54,758 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:21:54,764 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/ABLS.csv' to '/stock_data/raw/daily/AMEX/20260104/ABLS.csv'.
+2026-01-10 09:21:54,765 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/ABLS.csv'.
+2026-01-10 09:21:54,782 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/ABLS.csv.temp-1768036914771376'.
+2026-01-10 09:21:55,239 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/ABLS.csv' recursively.
+2026-01-10 09:21:55,251 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/ABLS.csv.temp-1768036914771376' to '/stock_data/raw/daily/AMEX/20260104/ABLS.csv'.
+2026-01-10 09:21:55,269 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/ABLS.csv'.
+2026-01-10 09:21:55,276 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,100 bytes
+2026-01-10 09:21:55,278 - hdfs_uploader - INFO -     ✓ Uploaded ABLS.csv
+2026-01-10 09:21:55,296 - hdfs_uploader - INFO -     Uploading: ABNY.csv
+2026-01-10 09:21:55,322 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/ABNY.csv (2,019 bytes) to /stock_data/raw/daily/AMEX/20260104/ABNY.csv
+2026-01-10 09:21:55,323 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:21:55,331 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/ABNY.csv' to '/stock_data/raw/daily/AMEX/20260104/ABNY.csv'.
+2026-01-10 09:21:55,333 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/ABNY.csv'.
+2026-01-10 09:21:55,358 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/ABNY.csv.temp-1768036915340947'.
+2026-01-10 09:21:55,408 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/ABNY.csv' recursively.
+2026-01-10 09:21:55,420 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/ABNY.csv.temp-1768036915340947' to '/stock_data/raw/daily/AMEX/20260104/ABNY.csv'.
+2026-01-10 09:21:55,429 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/ABNY.csv'.
+2026-01-10 09:21:55,441 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,019 bytes
+2026-01-10 09:21:55,442 - hdfs_uploader - INFO -     ✓ Uploaded ABNY.csv
+2026-01-10 09:21:55,456 - hdfs_uploader - INFO -     Uploading: ABOT.csv
+2026-01-10 09:21:55,472 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/ABOT.csv (2,060 bytes) to /stock_data/raw/daily/AMEX/20260104/ABOT.csv
+2026-01-10 09:21:55,473 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:21:55,480 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/ABOT.csv' to '/stock_data/raw/daily/AMEX/20260104/ABOT.csv'.
+2026-01-10 09:21:55,484 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/ABOT.csv'.
+2026-01-10 09:21:55,496 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/ABOT.csv.temp-1768036915489515'.
+2026-01-10 09:21:55,545 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/ABOT.csv' recursively.
+2026-01-10 09:21:55,552 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/ABOT.csv.temp-1768036915489515' to '/stock_data/raw/daily/AMEX/20260104/ABOT.csv'.
+2026-01-10 09:21:55,561 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/ABOT.csv'.
+2026-01-10 09:21:55,566 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,060 bytes
+2026-01-10 09:21:55,567 - hdfs_uploader - INFO -     ✓ Uploaded ABOT.csv
+2026-01-10 09:21:55,577 - hdfs_uploader - INFO -     Uploading: ABXB.csv
+2026-01-10 09:21:55,585 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/ABXB.csv (2,035 bytes) to /stock_data/raw/daily/AMEX/20260104/ABXB.csv
+2026-01-10 09:21:55,586 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:21:55,593 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/ABXB.csv' to '/stock_data/raw/daily/AMEX/20260104/ABXB.csv'.
+2026-01-10 09:21:55,595 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/ABXB.csv'.
+2026-01-10 09:21:55,610 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/ABXB.csv.temp-1768036915600517'.
+2026-01-10 09:21:56,081 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/ABXB.csv' recursively.
+2026-01-10 09:21:56,094 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/ABXB.csv.temp-1768036915600517' to '/stock_data/raw/daily/AMEX/20260104/ABXB.csv'.
+2026-01-10 09:21:56,106 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/ABXB.csv'.
+2026-01-10 09:21:56,115 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,035 bytes
+2026-01-10 09:21:56,116 - hdfs_uploader - INFO -     ✓ Uploaded ABXB.csv
+2026-01-10 09:21:56,144 - hdfs_uploader - INFO -     Uploading: ACCS.csv
+2026-01-10 09:21:56,187 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/ACCS.csv (1,895 bytes) to /stock_data/raw/daily/AMEX/20260104/ACCS.csv
+2026-01-10 09:21:56,204 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:21:56,215 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/ACCS.csv' to '/stock_data/raw/daily/AMEX/20260104/ACCS.csv'.
+2026-01-10 09:21:56,218 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/ACCS.csv'.
+2026-01-10 09:21:56,270 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/ACCS.csv.temp-1768036916228306'.
+2026-01-10 09:21:56,326 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/ACCS.csv' recursively.
+2026-01-10 09:21:56,334 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/ACCS.csv.temp-1768036916228306' to '/stock_data/raw/daily/AMEX/20260104/ACCS.csv'.
+2026-01-10 09:21:56,343 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/ACCS.csv'.
+2026-01-10 09:21:56,352 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 1,895 bytes
+2026-01-10 09:21:56,354 - hdfs_uploader - INFO -     ✓ Uploaded ACCS.csv
+2026-01-10 09:21:56,365 - hdfs_uploader - INFO -     Uploading: ACEI.csv
+2026-01-10 09:21:56,372 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/ACEI.csv (2,031 bytes) to /stock_data/raw/daily/AMEX/20260104/ACEI.csv
+2026-01-10 09:21:56,372 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:21:56,378 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/ACEI.csv' to '/stock_data/raw/daily/AMEX/20260104/ACEI.csv'.
+2026-01-10 09:21:56,379 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/ACEI.csv'.
+2026-01-10 09:21:56,392 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/ACEI.csv.temp-1768036916384924'.
+2026-01-10 09:21:56,849 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/ACEI.csv' recursively.
+2026-01-10 09:21:56,859 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/ACEI.csv.temp-1768036916384924' to '/stock_data/raw/daily/AMEX/20260104/ACEI.csv'.
+2026-01-10 09:21:56,875 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/ACEI.csv'.
+2026-01-10 09:21:56,883 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,031 bytes
+2026-01-10 09:21:56,884 - hdfs_uploader - INFO -     ✓ Uploaded ACEI.csv
+2026-01-10 09:21:56,900 - hdfs_uploader - INFO -     Uploading: ACES.csv
+2026-01-10 09:21:56,915 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/ACES.csv (1,999 bytes) to /stock_data/raw/daily/AMEX/20260104/ACES.csv
+2026-01-10 09:21:56,918 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:21:56,926 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/ACES.csv' to '/stock_data/raw/daily/AMEX/20260104/ACES.csv'.
+2026-01-10 09:21:56,927 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/ACES.csv'.
+2026-01-10 09:21:56,951 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/ACES.csv.temp-1768036916933148'.
+2026-01-10 09:21:57,010 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/ACES.csv' recursively.
+2026-01-10 09:21:57,022 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/ACES.csv.temp-1768036916933148' to '/stock_data/raw/daily/AMEX/20260104/ACES.csv'.
+2026-01-10 09:21:57,032 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/ACES.csv'.
+2026-01-10 09:21:57,041 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 1,999 bytes
+2026-01-10 09:21:57,043 - hdfs_uploader - INFO -     ✓ Uploaded ACES.csv
+2026-01-10 09:21:57,054 - hdfs_uploader - INFO -     Uploading: ACGR.csv
+2026-01-10 09:21:57,067 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/ACGR.csv (2,060 bytes) to /stock_data/raw/daily/AMEX/20260104/ACGR.csv
+2026-01-10 09:21:57,068 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:21:57,074 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/ACGR.csv' to '/stock_data/raw/daily/AMEX/20260104/ACGR.csv'.
+2026-01-10 09:21:57,076 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/ACGR.csv'.
+2026-01-10 09:21:57,104 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/ACGR.csv.temp-1768036917085123'.
+2026-01-10 09:21:57,158 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/ACGR.csv' recursively.
+2026-01-10 09:21:57,166 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/ACGR.csv.temp-1768036917085123' to '/stock_data/raw/daily/AMEX/20260104/ACGR.csv'.
+2026-01-10 09:21:57,175 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/ACGR.csv'.
+2026-01-10 09:21:57,182 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,060 bytes
+2026-01-10 09:21:57,183 - hdfs_uploader - INFO -     ✓ Uploaded ACGR.csv
+2026-01-10 09:21:57,191 - hdfs_uploader - INFO -   Processing date: 20260110
+2026-01-10 09:21:57,210 - hdfs_uploader - INFO -     Uploading: AAA.csv
+2026-01-10 09:21:57,221 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/AAA.csv (1,942 bytes) to /stock_data/raw/daily/AMEX/20260110/AAA.csv
+2026-01-10 09:21:57,222 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:21:57,230 - hdfs_uploader - INFO - Creating HDFS directory: /stock_data/raw/daily/AMEX/20260110
+2026-01-10 09:21:57,230 - hdfs.client - INFO - Creating directories to '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:21:57,241 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/AAA.csv' to '/stock_data/raw/daily/AMEX/20260110/AAA.csv'.
+2026-01-10 09:21:57,242 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/AAA.csv'.
+2026-01-10 09:21:57,258 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/AAA.csv'.
+2026-01-10 09:21:57,297 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/AAA.csv'.
+2026-01-10 09:21:57,303 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 1,942 bytes
+2026-01-10 09:21:57,304 - hdfs_uploader - INFO -     ✓ Uploaded AAA.csv
+2026-01-10 09:21:57,314 - hdfs_uploader - INFO -     Uploading: AAAA.csv
+2026-01-10 09:21:57,322 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/AAAA.csv (2,021 bytes) to /stock_data/raw/daily/AMEX/20260110/AAAA.csv
+2026-01-10 09:21:57,322 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:21:57,329 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/AAAA.csv' to '/stock_data/raw/daily/AMEX/20260110/AAAA.csv'.
+2026-01-10 09:21:57,330 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/AAAA.csv'.
+2026-01-10 09:21:57,345 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/AAAA.csv'.
+2026-01-10 09:21:57,795 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/AAAA.csv'.
+2026-01-10 09:21:57,803 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,021 bytes
+2026-01-10 09:21:57,804 - hdfs_uploader - INFO -     ✓ Uploaded AAAA.csv
+2026-01-10 09:21:57,819 - hdfs_uploader - INFO -     Uploading: AAAU.csv
+2026-01-10 09:21:57,829 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/AAAU.csv (2,042 bytes) to /stock_data/raw/daily/AMEX/20260110/AAAU.csv
+2026-01-10 09:21:57,831 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:21:57,837 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/AAAU.csv' to '/stock_data/raw/daily/AMEX/20260110/AAAU.csv'.
+2026-01-10 09:21:57,838 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/AAAU.csv'.
+2026-01-10 09:21:57,862 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/AAAU.csv'.
+2026-01-10 09:21:58,326 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/AAAU.csv'.
+2026-01-10 09:21:58,336 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,042 bytes
+2026-01-10 09:21:58,337 - hdfs_uploader - INFO -     ✓ Uploaded AAAU.csv
+2026-01-10 09:21:58,355 - hdfs_uploader - INFO -     Uploading: AAPR.csv
+2026-01-10 09:21:58,367 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/AAPR.csv (2,011 bytes) to /stock_data/raw/daily/AMEX/20260110/AAPR.csv
+2026-01-10 09:21:58,369 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:21:58,379 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/AAPR.csv' to '/stock_data/raw/daily/AMEX/20260110/AAPR.csv'.
+2026-01-10 09:21:58,380 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/AAPR.csv'.
+2026-01-10 09:21:58,399 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/AAPR.csv'.
+2026-01-10 09:21:58,850 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/AAPR.csv'.
+2026-01-10 09:21:58,860 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,011 bytes
+2026-01-10 09:21:58,862 - hdfs_uploader - INFO -     ✓ Uploaded AAPR.csv
+2026-01-10 09:21:58,879 - hdfs_uploader - INFO -     Uploading: AAPW.csv
+2026-01-10 09:21:58,905 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/AAPW.csv (1,983 bytes) to /stock_data/raw/daily/AMEX/20260110/AAPW.csv
+2026-01-10 09:21:58,906 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:21:58,914 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/AAPW.csv' to '/stock_data/raw/daily/AMEX/20260110/AAPW.csv'.
+2026-01-10 09:21:58,916 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/AAPW.csv'.
+2026-01-10 09:21:58,936 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/AAPW.csv'.
+2026-01-10 09:21:58,975 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/AAPW.csv'.
+2026-01-10 09:21:58,980 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 1,983 bytes
+2026-01-10 09:21:58,981 - hdfs_uploader - INFO -     ✓ Uploaded AAPW.csv
+2026-01-10 09:21:58,990 - hdfs_uploader - INFO -     Uploading: AAPX.csv
+2026-01-10 09:21:58,996 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/AAPX.csv (2,010 bytes) to /stock_data/raw/daily/AMEX/20260110/AAPX.csv
+2026-01-10 09:21:58,997 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:21:59,002 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/AAPX.csv' to '/stock_data/raw/daily/AMEX/20260110/AAPX.csv'.
+2026-01-10 09:21:59,003 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/AAPX.csv'.
+2026-01-10 09:21:59,021 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/AAPX.csv'.
+2026-01-10 09:21:59,056 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/AAPX.csv'.
+2026-01-10 09:21:59,061 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,010 bytes
+2026-01-10 09:21:59,062 - hdfs_uploader - INFO -     ✓ Uploaded AAPX.csv
+2026-01-10 09:21:59,072 - hdfs_uploader - INFO -     Uploading: AAPY.csv
+2026-01-10 09:21:59,082 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/AAPY.csv (2,031 bytes) to /stock_data/raw/daily/AMEX/20260110/AAPY.csv
+2026-01-10 09:21:59,084 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:21:59,089 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/AAPY.csv' to '/stock_data/raw/daily/AMEX/20260110/AAPY.csv'.
+2026-01-10 09:21:59,090 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/AAPY.csv'.
+2026-01-10 09:21:59,103 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/AAPY.csv'.
+2026-01-10 09:21:59,138 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/AAPY.csv'.
+2026-01-10 09:21:59,143 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,031 bytes
+2026-01-10 09:21:59,144 - hdfs_uploader - INFO -     ✓ Uploaded AAPY.csv
+2026-01-10 09:21:59,155 - hdfs_uploader - INFO -     Uploading: AAUM.csv
+2026-01-10 09:21:59,162 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/AAUM.csv (2,098 bytes) to /stock_data/raw/daily/AMEX/20260110/AAUM.csv
+2026-01-10 09:21:59,164 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:21:59,170 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/AAUM.csv' to '/stock_data/raw/daily/AMEX/20260110/AAUM.csv'.
+2026-01-10 09:21:59,171 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/AAUM.csv'.
+2026-01-10 09:21:59,186 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/AAUM.csv'.
+2026-01-10 09:21:59,626 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/AAUM.csv'.
+2026-01-10 09:21:59,632 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,098 bytes
+2026-01-10 09:21:59,633 - hdfs_uploader - INFO -     ✓ Uploaded AAUM.csv
+2026-01-10 09:21:59,645 - hdfs_uploader - INFO -     Uploading: ABEQ.csv
+2026-01-10 09:21:59,665 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/ABEQ.csv (1,987 bytes) to /stock_data/raw/daily/AMEX/20260110/ABEQ.csv
+2026-01-10 09:21:59,666 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:21:59,673 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/ABEQ.csv' to '/stock_data/raw/daily/AMEX/20260110/ABEQ.csv'.
+2026-01-10 09:21:59,675 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/ABEQ.csv'.
+2026-01-10 09:21:59,693 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/ABEQ.csv'.
+2026-01-10 09:21:59,732 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/ABEQ.csv'.
+2026-01-10 09:21:59,740 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 1,987 bytes
+2026-01-10 09:21:59,741 - hdfs_uploader - INFO -     ✓ Uploaded ABEQ.csv
+2026-01-10 09:21:59,755 - hdfs_uploader - INFO -     Uploading: ABFL.csv
+2026-01-10 09:21:59,768 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/ABFL.csv (2,004 bytes) to /stock_data/raw/daily/AMEX/20260110/ABFL.csv
+2026-01-10 09:21:59,769 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:21:59,774 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/ABFL.csv' to '/stock_data/raw/daily/AMEX/20260110/ABFL.csv'.
+2026-01-10 09:21:59,775 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/ABFL.csv'.
+2026-01-10 09:21:59,800 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/ABFL.csv'.
+2026-01-10 09:21:59,846 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/ABFL.csv'.
+2026-01-10 09:21:59,854 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,004 bytes
+2026-01-10 09:21:59,855 - hdfs_uploader - INFO -     ✓ Uploaded ABFL.csv
+2026-01-10 09:21:59,872 - hdfs_uploader - INFO -     Uploading: ABLD.csv
+2026-01-10 09:21:59,887 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/ABLD.csv (1,997 bytes) to /stock_data/raw/daily/AMEX/20260110/ABLD.csv
+2026-01-10 09:21:59,888 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:21:59,895 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/ABLD.csv' to '/stock_data/raw/daily/AMEX/20260110/ABLD.csv'.
+2026-01-10 09:21:59,896 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/ABLD.csv'.
+2026-01-10 09:21:59,921 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/ABLD.csv'.
+2026-01-10 09:22:00,399 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/ABLD.csv'.
+2026-01-10 09:22:00,415 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 1,997 bytes
+2026-01-10 09:22:00,416 - hdfs_uploader - INFO -     ✓ Uploaded ABLD.csv
+2026-01-10 09:22:00,437 - hdfs_uploader - INFO -     Uploading: ABLG.csv
+2026-01-10 09:22:00,450 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/ABLG.csv (2,033 bytes) to /stock_data/raw/daily/AMEX/20260110/ABLG.csv
+2026-01-10 09:22:00,452 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:22:00,459 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/ABLG.csv' to '/stock_data/raw/daily/AMEX/20260110/ABLG.csv'.
+2026-01-10 09:22:00,461 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/ABLG.csv'.
+2026-01-10 09:22:00,486 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/ABLG.csv'.
+2026-01-10 09:22:00,958 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/ABLG.csv'.
+2026-01-10 09:22:00,967 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,033 bytes
+2026-01-10 09:22:00,970 - hdfs_uploader - INFO -     ✓ Uploaded ABLG.csv
+2026-01-10 09:22:00,983 - hdfs_uploader - INFO -     Uploading: ABLS.csv
+2026-01-10 09:22:00,993 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/ABLS.csv (2,104 bytes) to /stock_data/raw/daily/AMEX/20260110/ABLS.csv
+2026-01-10 09:22:00,994 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:22:00,999 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/ABLS.csv' to '/stock_data/raw/daily/AMEX/20260110/ABLS.csv'.
+2026-01-10 09:22:01,000 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/ABLS.csv'.
+2026-01-10 09:22:01,022 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/ABLS.csv'.
+2026-01-10 09:22:01,475 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/ABLS.csv'.
+2026-01-10 09:22:01,483 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,104 bytes
+2026-01-10 09:22:01,485 - hdfs_uploader - INFO -     ✓ Uploaded ABLS.csv
+2026-01-10 09:22:01,500 - hdfs_uploader - INFO -     Uploading: ABNY.csv
+2026-01-10 09:22:01,510 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/ABNY.csv (2,010 bytes) to /stock_data/raw/daily/AMEX/20260110/ABNY.csv
+2026-01-10 09:22:01,513 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:22:01,519 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/ABNY.csv' to '/stock_data/raw/daily/AMEX/20260110/ABNY.csv'.
+2026-01-10 09:22:01,521 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/ABNY.csv'.
+2026-01-10 09:22:01,550 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/ABNY.csv'.
+2026-01-10 09:22:01,594 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/ABNY.csv'.
+2026-01-10 09:22:01,600 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,010 bytes
+2026-01-10 09:22:01,601 - hdfs_uploader - INFO -     ✓ Uploaded ABNY.csv
+2026-01-10 09:22:01,618 - hdfs_uploader - INFO -     Uploading: ABOT.csv
+2026-01-10 09:22:01,638 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/ABOT.csv (2,062 bytes) to /stock_data/raw/daily/AMEX/20260110/ABOT.csv
+2026-01-10 09:22:01,639 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:22:01,645 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/ABOT.csv' to '/stock_data/raw/daily/AMEX/20260110/ABOT.csv'.
+2026-01-10 09:22:01,646 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/ABOT.csv'.
+2026-01-10 09:22:01,662 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/ABOT.csv'.
+2026-01-10 09:22:02,114 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/ABOT.csv'.
+2026-01-10 09:22:02,121 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,062 bytes
+2026-01-10 09:22:02,123 - hdfs_uploader - INFO -     ✓ Uploaded ABOT.csv
+2026-01-10 09:22:02,138 - hdfs_uploader - INFO -     Uploading: ABXB.csv
+2026-01-10 09:22:02,146 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/ABXB.csv (2,032 bytes) to /stock_data/raw/daily/AMEX/20260110/ABXB.csv
+2026-01-10 09:22:02,146 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:22:02,152 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/ABXB.csv' to '/stock_data/raw/daily/AMEX/20260110/ABXB.csv'.
+2026-01-10 09:22:02,153 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/ABXB.csv'.
+2026-01-10 09:22:02,169 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/ABXB.csv'.
+2026-01-10 09:22:02,202 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/ABXB.csv'.
+2026-01-10 09:22:02,206 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,032 bytes
+2026-01-10 09:22:02,207 - hdfs_uploader - INFO -     ✓ Uploaded ABXB.csv
+2026-01-10 09:22:02,217 - hdfs_uploader - INFO -     Uploading: ACCS.csv
+2026-01-10 09:22:02,224 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/ACCS.csv (1,901 bytes) to /stock_data/raw/daily/AMEX/20260110/ACCS.csv
+2026-01-10 09:22:02,225 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:22:02,229 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/ACCS.csv' to '/stock_data/raw/daily/AMEX/20260110/ACCS.csv'.
+2026-01-10 09:22:02,230 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/ACCS.csv'.
+2026-01-10 09:22:02,240 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/ACCS.csv'.
+2026-01-10 09:22:02,683 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/ACCS.csv'.
+2026-01-10 09:22:02,689 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 1,901 bytes
+2026-01-10 09:22:02,690 - hdfs_uploader - INFO -     ✓ Uploaded ACCS.csv
+2026-01-10 09:22:02,704 - hdfs_uploader - INFO -     Uploading: ACEI.csv
+2026-01-10 09:22:02,713 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/ACEI.csv (2,024 bytes) to /stock_data/raw/daily/AMEX/20260110/ACEI.csv
+2026-01-10 09:22:02,714 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:22:02,719 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/ACEI.csv' to '/stock_data/raw/daily/AMEX/20260110/ACEI.csv'.
+2026-01-10 09:22:02,720 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/ACEI.csv'.
+2026-01-10 09:22:02,742 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/ACEI.csv'.
+2026-01-10 09:22:03,187 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/ACEI.csv'.
+2026-01-10 09:22:03,193 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,024 bytes
+2026-01-10 09:22:03,194 - hdfs_uploader - INFO -     ✓ Uploaded ACEI.csv
+2026-01-10 09:22:03,204 - hdfs_uploader - INFO -     Uploading: ACES.csv
+2026-01-10 09:22:03,213 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/ACES.csv (1,997 bytes) to /stock_data/raw/daily/AMEX/20260110/ACES.csv
+2026-01-10 09:22:03,214 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:22:03,219 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/ACES.csv' to '/stock_data/raw/daily/AMEX/20260110/ACES.csv'.
+2026-01-10 09:22:03,221 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/ACES.csv'.
+2026-01-10 09:22:03,240 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/ACES.csv'.
+2026-01-10 09:22:03,685 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/ACES.csv'.
+2026-01-10 09:22:03,693 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 1,997 bytes
+2026-01-10 09:22:03,694 - hdfs_uploader - INFO -     ✓ Uploaded ACES.csv
+2026-01-10 09:22:03,706 - hdfs_uploader - INFO -     Uploading: ACGR.csv
+2026-01-10 09:22:03,715 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/ACGR.csv (2,058 bytes) to /stock_data/raw/daily/AMEX/20260110/ACGR.csv
+2026-01-10 09:22:03,716 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:22:03,726 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/ACGR.csv' to '/stock_data/raw/daily/AMEX/20260110/ACGR.csv'.
+2026-01-10 09:22:03,727 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/ACGR.csv'.
+2026-01-10 09:22:03,745 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/ACGR.csv'.
+2026-01-10 09:22:03,795 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/ACGR.csv'.
+2026-01-10 09:22:03,802 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,058 bytes
+2026-01-10 09:22:03,803 - hdfs_uploader - INFO -     ✓ Uploaded ACGR.csv
+2026-01-10 09:22:03,804 - hdfs_uploader - INFO - 📊 Exchange AMEX upload summary: 40 successful, 0 failed
+2026-01-10 09:22:03,805 - data_collector - INFO - ✅ Successfully uploaded 40 files for AMEX to HDFS
+2026-01-10 09:22:03,806 - data_collector - INFO - ✓ AMEX uploaded to HDFS: 40 files
+2026-01-10 09:22:03,807 - data_collector - INFO - 
+========================================
+2026-01-10 09:22:03,808 - data_collector - INFO - EXCHANGE SUMMARY: AMEX
+2026-01-10 09:22:03,809 - data_collector - INFO - ========================================
+2026-01-10 09:22:03,810 - data_collector - INFO - Successful symbols: 20
+2026-01-10 09:22:03,811 - data_collector - INFO - Failed symbols: 0
+2026-01-10 09:22:03,812 - data_collector - INFO - Data points: 420
+2026-01-10 09:22:03,813 - data_collector - INFO - Files uploaded to HDFS: 40
+2026-01-10 09:22:03,814 - data_collector - INFO - Database success: 4
+2026-01-10 09:22:03,814 - data_collector - INFO - Database failed: 16
+2026-01-10 09:22:03,815 - data_collector - INFO - 
+✓ AMEX completed and uploaded to HDFS:
+2026-01-10 09:22:03,816 - data_collector - INFO -   Successful symbols: 20
+2026-01-10 09:22:03,818 - data_collector - INFO -   Failed symbols: 0
+2026-01-10 09:22:03,820 - data_collector - INFO -   Data points: 420
+2026-01-10 09:22:03,820 - data_collector - INFO -   HDFS uploads: 40
+2026-01-10 09:22:03,821 - data_collector - INFO - 
+Waiting 5s before next exchange...
+2026-01-10 09:22:08,824 - data_collector - INFO - 
+============================================================
+2026-01-10 09:22:08,827 - data_collector - INFO - STARTING COLLECTION FOR AMS (Euronext - Amsterdam)
+2026-01-10 09:22:08,829 - data_collector - INFO - Progress: 2/29
+2026-01-10 09:22:08,830 - data_collector - INFO - ============================================================
+2026-01-10 09:22:08,831 - data_collector - INFO - 
+============================================================
+2026-01-10 09:22:08,832 - data_collector - INFO - COLLECTING FROM AMS
+2026-01-10 09:22:08,834 - data_collector - INFO - Config: 20 symbols, 30 days of data
+2026-01-10 09:22:08,838 - data_collector - INFO - ============================================================
+2026-01-10 09:22:08,840 - data_collector - INFO - Fetching symbols for AMS...
+2026-01-10 09:22:09,232 - data_collector - ERROR - Unauthorized - Check API key
+2026-01-10 09:22:09,233 - data_collector - WARNING - No symbols returned for AMS. Data: {}
+2026-01-10 09:22:09,233 - data_collector - ERROR - No symbols found for AMS
+2026-01-10 09:22:09,234 - data_collector - INFO - 
+✓ AMS completed and uploaded to HDFS:
+2026-01-10 09:22:09,235 - data_collector - INFO -   Successful symbols: 0
+2026-01-10 09:22:09,235 - data_collector - INFO -   Failed symbols: 0
+2026-01-10 09:22:09,236 - data_collector - INFO -   Data points: 0
+2026-01-10 09:22:09,236 - data_collector - INFO -   HDFS uploads: 0
+2026-01-10 09:22:09,237 - data_collector - INFO - 
+Waiting 5s before next exchange...
+2026-01-10 09:23:12,508 - __main__ - INFO - 🚀 STARTING DATA INGESTION SCHEDULER
+2026-01-10 09:23:12,509 - __main__ - INFO - Configuration:
+2026-01-10 09:23:12,510 - __main__ - INFO -   - Interval: 6 hours
+2026-01-10 09:23:12,511 - __main__ - INFO -   - Symbols per exchange: 10
+2026-01-10 09:23:12,511 - __main__ - INFO -   - Days of data: 30
+2026-01-10 09:23:12,512 - __main__ - INFO -   - Data directory: /data
+2026-01-10 09:23:12,513 - __main__ - INFO - ============================================================
+2026-01-10 09:23:12,514 - __main__ - INFO - 
+🔄 CYCLE #1 - 2026-01-10 09:23:12
+2026-01-10 09:23:13,539 - __main__ - INFO - ============================================================
+2026-01-10 09:23:13,540 - __main__ - INFO - STARTING DATA COLLECTION CYCLE
+2026-01-10 09:23:13,542 - __main__ - INFO - ============================================================
+2026-01-10 09:23:13,543 - __main__ - INFO - 📊 STEP 1: Collecting stock data and uploading to HDFS...
+2026-01-10 09:23:13,545 - data_collector - INFO - ============================================================
+2026-01-10 09:23:13,546 - data_collector - INFO - EODData COLLECTOR - STARTING (ALL EXCHANGES)
+2026-01-10 09:23:13,547 - data_collector - INFO - Start time: 2026-01-10 09:23:13
+2026-01-10 09:23:13,548 - data_collector - INFO - Config: 20 symbols/exchange, 30 days of data
+2026-01-10 09:23:13,549 - data_collector - INFO - NOTE: Each exchange will be uploaded to HDFS immediately after collection
+2026-01-10 09:23:13,551 - data_collector - INFO - ============================================================
+2026-01-10 09:23:13,552 - data_collector - INFO - Using API key: 1rwJF2a5...
+2026-01-10 09:23:13,644 - data_collector - INFO - Testing API connection...
+2026-01-10 09:23:13,645 - data_collector - INFO - Fetching ALL exchanges list...
+2026-01-10 09:23:17,311 - data_collector - INFO - Found 29 total exchanges
+2026-01-10 09:23:17,312 - data_collector - INFO - API connection successful. Found 29 exchanges
+2026-01-10 09:23:17,313 - data_collector - INFO - Getting ALL exchanges...
+2026-01-10 09:23:17,314 - data_collector - INFO - Fetching ALL exchanges list...
+2026-01-10 09:23:17,705 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:23:48,833 - data_collector - INFO - Found 29 total exchanges
+2026-01-10 09:23:48,835 - data_collector - INFO - Found 29 exchanges
+2026-01-10 09:23:48,838 - data_collector - INFO - Processing 29 exchanges...
+2026-01-10 09:23:48,840 - data_collector - INFO - 
+============================================================
+2026-01-10 09:23:48,842 - data_collector - INFO - STARTING COLLECTION FOR AMEX (American Stock Exchange)
+2026-01-10 09:23:48,843 - data_collector - INFO - Progress: 1/29
+2026-01-10 09:23:48,844 - data_collector - INFO - ============================================================
+2026-01-10 09:23:48,845 - data_collector - INFO - 
+============================================================
+2026-01-10 09:23:48,845 - data_collector - INFO - COLLECTING FROM AMEX
+2026-01-10 09:23:48,846 - data_collector - INFO - Config: 20 symbols, 30 days of data
+2026-01-10 09:23:48,848 - data_collector - INFO - ============================================================
+2026-01-10 09:23:48,848 - data_collector - INFO - Fetching symbols for AMEX...
+2026-01-10 09:23:49,210 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:25:59,182 - data_collector - INFO - Found 20 symbols for AMEX
+2026-01-10 09:25:59,187 - data_collector - INFO - Processing 20 symbols...
+2026-01-10 09:25:59,190 - data_collector - INFO - 
+[1/20] AAA: First Priority Clo Bond ETF
+2026-01-10 09:25:59,191 - data_collector - INFO - Fetching d data for AAA.AMEX
+2026-01-10 09:25:59,624 - data_collector - INFO - Retrieved 21 records for AAA
+2026-01-10 09:25:59,662 - data_collector - INFO - ✓ Saved AAA.AMEX to /data/raw/AMEX/20260110/AAA.csv (1,942 bytes)
+2026-01-10 09:25:59,710 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:25:59,711 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:25:59,712 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:26:01,715 - data_collector - INFO - 
+[2/20] AAAA: Amplius Aggressive Asset Allocation ETF
+2026-01-10 09:26:01,717 - data_collector - INFO - Fetching d data for AAAA.AMEX
+2026-01-10 09:26:02,780 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:26:33,239 - data_collector - INFO - Retrieved 21 records for AAAA
+2026-01-10 09:26:33,280 - data_collector - INFO - ✓ Saved AAAA.AMEX to /data/raw/AMEX/20260110/AAAA.csv (2,021 bytes)
+2026-01-10 09:26:33,306 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:26:33,307 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:26:33,309 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:26:35,313 - data_collector - INFO - 
+[3/20] AAAU: GS Physical Gold ETF
+2026-01-10 09:26:35,314 - data_collector - INFO - Fetching d data for AAAU.AMEX
+2026-01-10 09:26:36,235 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:27:07,647 - data_collector - INFO - Retrieved 21 records for AAAU
+2026-01-10 09:27:07,699 - data_collector - INFO - ✓ Saved AAAU.AMEX to /data/raw/AMEX/20260110/AAAU.csv (2,042 bytes)
+2026-01-10 09:27:07,723 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:27:07,723 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:27:07,725 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:27:09,729 - data_collector - INFO - 
+[4/20] AAPR: Innovator Equity Defined Protection ETF Apr 26
+2026-01-10 09:27:09,731 - data_collector - INFO - Fetching d data for AAPR.AMEX
+2026-01-10 09:27:10,225 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:27:41,391 - data_collector - INFO - Retrieved 21 records for AAPR
+2026-01-10 09:27:41,418 - data_collector - INFO - ✓ Saved AAPR.AMEX to /data/raw/AMEX/20260110/AAPR.csv (2,011 bytes)
+2026-01-10 09:27:41,442 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:27:41,444 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:27:41,445 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:27:43,448 - data_collector - INFO - 
+[5/20] AAPW: Roundhill Aapl Weeklypay ETF
+2026-01-10 09:27:43,450 - data_collector - INFO - Fetching d data for AAPW.AMEX
+2026-01-10 09:27:43,830 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:28:14,621 - data_collector - INFO - Retrieved 21 records for AAPW
+2026-01-10 09:28:14,648 - data_collector - INFO - ✓ Saved AAPW.AMEX to /data/raw/AMEX/20260110/AAPW.csv (1,983 bytes)
+2026-01-10 09:28:14,674 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:28:14,674 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:28:14,676 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:28:16,679 - data_collector - INFO - 
+[6/20] AAPX: T-Rex 2X Long Apple Daily Target ETF
+2026-01-10 09:28:16,681 - data_collector - INFO - Fetching d data for AAPX.AMEX
+2026-01-10 09:28:17,074 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:28:47,590 - data_collector - INFO - Retrieved 21 records for AAPX
+2026-01-10 09:28:47,620 - data_collector - INFO - ✓ Saved AAPX.AMEX to /data/raw/AMEX/20260110/AAPX.csv (2,010 bytes)
+2026-01-10 09:28:47,645 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:28:47,646 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:28:47,648 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:28:49,652 - data_collector - INFO - 
+[7/20] AAPY: Kurv Yield Premium Apple [Aapl] ETF
+2026-01-10 09:28:49,654 - data_collector - INFO - Fetching d data for AAPY.AMEX
+2026-01-10 09:28:50,093 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:29:20,575 - data_collector - INFO - Retrieved 21 records for AAPY
+2026-01-10 09:29:20,616 - data_collector - INFO - ✓ Saved AAPY.AMEX to /data/raw/AMEX/20260110/AAPY.csv (2,031 bytes)
+2026-01-10 09:29:20,641 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:29:20,643 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:29:20,644 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:29:22,647 - data_collector - INFO - 
+[8/20] AAUM: Tema Alternative Asset Managers ETF
+2026-01-10 09:29:22,648 - data_collector - INFO - Fetching d data for AAUM.AMEX
+2026-01-10 09:29:23,062 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:29:53,544 - data_collector - INFO - Retrieved 21 records for AAUM
+2026-01-10 09:29:53,576 - data_collector - INFO - ✓ Saved AAUM.AMEX to /data/raw/AMEX/20260110/AAUM.csv (2,098 bytes)
+2026-01-10 09:29:53,600 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:29:53,602 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:29:53,603 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:29:55,606 - data_collector - INFO - 
+[9/20] ABEQ: Absolute Core Strategy ETF
+2026-01-10 09:29:55,608 - data_collector - INFO - Fetching d data for ABEQ.AMEX
+2026-01-10 09:29:55,980 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:30:26,447 - data_collector - INFO - Retrieved 21 records for ABEQ
+2026-01-10 09:30:26,494 - data_collector - INFO - ✓ Saved ABEQ.AMEX to /data/raw/AMEX/20260110/ABEQ.csv (1,987 bytes)
+2026-01-10 09:30:26,521 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:30:26,522 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:30:26,524 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:30:28,528 - data_collector - INFO - 
+[10/20] ABFL: Abacus Fcf Leaders ETF
+2026-01-10 09:30:28,529 - data_collector - INFO - Fetching d data for ABFL.AMEX
+2026-01-10 09:30:28,907 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:30:59,366 - data_collector - INFO - Retrieved 21 records for ABFL
+2026-01-10 09:30:59,407 - data_collector - INFO - ✓ Saved ABFL.AMEX to /data/raw/AMEX/20260110/ABFL.csv (2,004 bytes)
+2026-01-10 09:30:59,433 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:30:59,435 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:30:59,439 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:31:01,441 - data_collector - INFO - 
+[11/20] ABLD: Abacus Fcf Real Assets Leaders ETF
+2026-01-10 09:31:01,443 - data_collector - INFO - Fetching d data for ABLD.AMEX
+2026-01-10 09:31:01,819 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:31:32,264 - data_collector - INFO - Retrieved 21 records for ABLD
+2026-01-10 09:31:32,310 - data_collector - INFO - ✓ Saved ABLD.AMEX to /data/raw/AMEX/20260110/ABLD.csv (1,997 bytes)
+2026-01-10 09:31:32,333 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:31:32,334 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:31:32,337 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:31:34,338 - data_collector - INFO - 
+[12/20] ABLG: Abacus Fcf International Leaders ETF
+2026-01-10 09:31:34,340 - data_collector - INFO - Fetching d data for ABLG.AMEX
+2026-01-10 09:31:34,754 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:32:05,218 - data_collector - INFO - Retrieved 21 records for ABLG
+2026-01-10 09:32:05,276 - data_collector - INFO - ✓ Saved ABLG.AMEX to /data/raw/AMEX/20260110/ABLG.csv (2,033 bytes)
+2026-01-10 09:32:05,300 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:32:05,301 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:32:05,302 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:32:07,305 - data_collector - INFO - 
+[13/20] ABLS: Abacus Fcf Small Cap Leaders ETF
+2026-01-10 09:32:07,307 - data_collector - INFO - Fetching d data for ABLS.AMEX
+2026-01-10 09:32:08,389 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:32:38,828 - data_collector - INFO - Retrieved 21 records for ABLS
+2026-01-10 09:32:38,866 - data_collector - INFO - ✓ Saved ABLS.AMEX to /data/raw/AMEX/20260110/ABLS.csv (2,104 bytes)
+2026-01-10 09:32:38,891 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:32:38,893 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:32:38,895 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:32:40,899 - data_collector - INFO - 
+[14/20] ABNY: Yieldmax Abnb Option Income Strategy ETF
+2026-01-10 09:32:40,903 - data_collector - INFO - Fetching d data for ABNY.AMEX
+2026-01-10 09:32:41,329 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:33:11,824 - data_collector - INFO - Retrieved 21 records for ABNY
+2026-01-10 09:33:11,859 - data_collector - INFO - ✓ Saved ABNY.AMEX to /data/raw/AMEX/20260110/ABNY.csv (2,010 bytes)
+2026-01-10 09:33:11,889 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:33:11,890 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:33:11,892 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:33:13,895 - data_collector - INFO - 
+[15/20] ABOT: Abacus Fcf Innovation Leaders ETF
+2026-01-10 09:33:13,897 - data_collector - INFO - Fetching d data for ABOT.AMEX
+2026-01-10 09:33:14,472 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:33:45,925 - data_collector - INFO - Retrieved 21 records for ABOT
+2026-01-10 09:33:45,973 - data_collector - INFO - ✓ Saved ABOT.AMEX to /data/raw/AMEX/20260110/ABOT.csv (2,062 bytes)
+2026-01-10 09:33:46,004 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:33:46,005 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:33:46,008 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:33:48,012 - data_collector - INFO - 
+[16/20] ABXB: Abacus Flexible Bond Leaders ETF
+2026-01-10 09:33:48,014 - data_collector - INFO - Fetching d data for ABXB.AMEX
+2026-01-10 09:33:48,382 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:34:19,412 - data_collector - INFO - Retrieved 21 records for ABXB
+2026-01-10 09:34:19,442 - data_collector - INFO - ✓ Saved ABXB.AMEX to /data/raw/AMEX/20260110/ABXB.csv (2,032 bytes)
+2026-01-10 09:34:19,466 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:34:19,467 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:34:19,468 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:34:21,472 - data_collector - INFO - 
+[17/20] ACCS: Access Newswire Inc
+2026-01-10 09:34:21,473 - data_collector - INFO - Fetching d data for ACCS.AMEX
+2026-01-10 09:34:21,873 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:34:53,199 - data_collector - INFO - Retrieved 21 records for ACCS
+2026-01-10 09:34:53,225 - data_collector - INFO - ✓ Saved ACCS.AMEX to /data/raw/AMEX/20260110/ACCS.csv (1,901 bytes)
+2026-01-10 09:34:53,253 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:34:53,254 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:34:53,256 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:34:55,259 - data_collector - INFO - 
+[18/20] ACEI: Innovator Equity Autocallable Income Strategy ET
+2026-01-10 09:34:55,262 - data_collector - INFO - Fetching d data for ACEI.AMEX
+2026-01-10 09:34:55,775 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:35:26,527 - data_collector - INFO - Retrieved 21 records for ACEI
+2026-01-10 09:35:26,629 - data_collector - INFO - ✓ Saved ACEI.AMEX to /data/raw/AMEX/20260110/ACEI.csv (2,024 bytes)
+2026-01-10 09:35:26,659 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:35:26,660 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:35:26,661 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:35:28,665 - data_collector - INFO - 
+[19/20] ACES: Alps Clean Energy ETF
+2026-01-10 09:35:28,666 - data_collector - INFO - Fetching d data for ACES.AMEX
+2026-01-10 09:35:29,386 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:35:59,980 - data_collector - INFO - Retrieved 21 records for ACES
+2026-01-10 09:36:00,039 - data_collector - INFO - ✓ Saved ACES.AMEX to /data/raw/AMEX/20260110/ACES.csv (1,997 bytes)
+2026-01-10 09:36:00,066 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:36:00,067 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:36:00,068 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:36:02,072 - data_collector - INFO - 
+[20/20] ACGR: American Century Large Cap Growth ETF
+2026-01-10 09:36:02,074 - data_collector - INFO - Fetching d data for ACGR.AMEX
+2026-01-10 09:36:02,450 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:37:26,013 - __main__ - INFO - 🚀 STARTING DATA INGESTION SCHEDULER
+2026-01-10 09:37:26,015 - __main__ - INFO - Configuration:
+2026-01-10 09:37:26,016 - __main__ - INFO -   - Interval: 6 hours
+2026-01-10 09:37:26,017 - __main__ - INFO -   - Symbols per exchange: 10
+2026-01-10 09:37:26,017 - __main__ - INFO -   - Days of data: 30
+2026-01-10 09:37:26,018 - __main__ - INFO -   - Data directory: /data
+2026-01-10 09:37:26,018 - __main__ - INFO - ============================================================
+2026-01-10 09:37:26,019 - __main__ - INFO - 
+🔄 CYCLE #1 - 2026-01-10 09:37:26
+2026-01-10 09:37:26,826 - __main__ - INFO - ============================================================
+2026-01-10 09:37:26,826 - __main__ - INFO - STARTING DATA COLLECTION CYCLE
+2026-01-10 09:37:26,827 - __main__ - INFO - ============================================================
+2026-01-10 09:37:26,828 - __main__ - INFO - 📊 STEP 1: Collecting stock data and uploading to HDFS...
+2026-01-10 09:37:26,829 - data_collector - INFO - ============================================================
+2026-01-10 09:37:26,829 - data_collector - INFO - EODData COLLECTOR - STARTING (ALL EXCHANGES)
+2026-01-10 09:37:26,830 - data_collector - INFO - Start time: 2026-01-10 09:37:26
+2026-01-10 09:37:26,831 - data_collector - INFO - Config: 20 symbols/exchange, 30 days of data
+2026-01-10 09:37:26,832 - data_collector - INFO - NOTE: Each exchange will be uploaded to HDFS immediately after collection
+2026-01-10 09:37:26,832 - data_collector - INFO - ============================================================
+2026-01-10 09:37:26,834 - data_collector - INFO - Using API key: 1rwJF2a5...
+2026-01-10 09:37:26,902 - data_collector - INFO - Testing API connection...
+2026-01-10 09:37:26,903 - data_collector - INFO - Fetching ALL exchanges list...
+2026-01-10 09:37:29,679 - data_collector - INFO - Found 29 total exchanges
+2026-01-10 09:37:29,681 - data_collector - INFO - API connection successful. Found 29 exchanges
+2026-01-10 09:37:29,683 - data_collector - INFO - Getting ALL exchanges...
+2026-01-10 09:37:29,685 - data_collector - INFO - Fetching ALL exchanges list...
+2026-01-10 09:37:30,086 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:38:00,588 - data_collector - INFO - Found 29 total exchanges
+2026-01-10 09:38:00,589 - data_collector - INFO - Found 29 exchanges
+2026-01-10 09:38:00,590 - data_collector - INFO - Processing 29 exchanges...
+2026-01-10 09:38:00,591 - data_collector - INFO - 
+============================================================
+2026-01-10 09:38:00,592 - data_collector - INFO - STARTING COLLECTION FOR AMEX (American Stock Exchange)
+2026-01-10 09:38:00,593 - data_collector - INFO - Progress: 1/29
+2026-01-10 09:38:00,594 - data_collector - INFO - ============================================================
+2026-01-10 09:38:00,595 - data_collector - INFO - 
+============================================================
+2026-01-10 09:38:00,596 - data_collector - INFO - COLLECTING FROM AMEX
+2026-01-10 09:38:00,597 - data_collector - INFO - Config: 20 symbols, 30 days of data
+2026-01-10 09:38:00,598 - data_collector - INFO - ============================================================
+2026-01-10 09:38:00,599 - data_collector - INFO - Fetching symbols for AMEX...
+2026-01-10 09:38:00,969 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:40:17,855 - data_collector - INFO - Found 20 symbols for AMEX
+2026-01-10 09:40:17,859 - data_collector - INFO - Processing 20 symbols...
+2026-01-10 09:40:17,860 - data_collector - INFO - 
+[1/20] AAA: First Priority Clo Bond ETF
+2026-01-10 09:40:17,861 - data_collector - INFO - Fetching d data for AAA.AMEX
+2026-01-10 09:40:18,844 - data_collector - INFO - Retrieved 21 records for AAA
+2026-01-10 09:40:18,887 - data_collector - INFO - ✓ Saved AAA.AMEX to /data/raw/AMEX/20260110/AAA.csv (1,942 bytes)
+2026-01-10 09:40:18,944 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:40:18,944 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:40:18,946 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:40:20,949 - data_collector - INFO - 
+[2/20] AAAA: Amplius Aggressive Asset Allocation ETF
+2026-01-10 09:40:20,950 - data_collector - INFO - Fetching d data for AAAA.AMEX
+2026-01-10 09:40:21,326 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:40:52,631 - data_collector - INFO - Retrieved 21 records for AAAA
+2026-01-10 09:40:52,670 - data_collector - INFO - ✓ Saved AAAA.AMEX to /data/raw/AMEX/20260110/AAAA.csv (2,021 bytes)
+2026-01-10 09:40:52,696 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:40:52,698 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:40:52,699 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:40:54,702 - data_collector - INFO - 
+[3/20] AAAU: GS Physical Gold ETF
+2026-01-10 09:40:54,703 - data_collector - INFO - Fetching d data for AAAU.AMEX
+2026-01-10 09:40:55,216 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:41:26,542 - data_collector - INFO - Retrieved 21 records for AAAU
+2026-01-10 09:41:26,561 - data_collector - INFO - ✓ Saved AAAU.AMEX to /data/raw/AMEX/20260110/AAAU.csv (2,042 bytes)
+2026-01-10 09:41:26,589 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:41:26,591 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:41:26,596 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:41:28,604 - data_collector - INFO - 
+[4/20] AAPR: Innovator Equity Defined Protection ETF Apr 26
+2026-01-10 09:41:28,605 - data_collector - INFO - Fetching d data for AAPR.AMEX
+2026-01-10 09:41:29,005 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:41:59,462 - data_collector - INFO - Retrieved 21 records for AAPR
+2026-01-10 09:41:59,491 - data_collector - INFO - ✓ Saved AAPR.AMEX to /data/raw/AMEX/20260110/AAPR.csv (2,011 bytes)
+2026-01-10 09:41:59,515 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:41:59,516 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:41:59,516 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:42:01,520 - data_collector - INFO - 
+[5/20] AAPW: Roundhill Aapl Weeklypay ETF
+2026-01-10 09:42:01,521 - data_collector - INFO - Fetching d data for AAPW.AMEX
+2026-01-10 09:42:01,943 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:42:32,713 - data_collector - INFO - Retrieved 21 records for AAPW
+2026-01-10 09:42:32,758 - data_collector - INFO - ✓ Saved AAPW.AMEX to /data/raw/AMEX/20260110/AAPW.csv (1,983 bytes)
+2026-01-10 09:42:32,784 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:42:32,786 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:42:32,786 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:42:34,789 - data_collector - INFO - 
+[6/20] AAPX: T-Rex 2X Long Apple Daily Target ETF
+2026-01-10 09:42:34,791 - data_collector - INFO - Fetching d data for AAPX.AMEX
+2026-01-10 09:42:35,234 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:43:05,698 - data_collector - INFO - Retrieved 21 records for AAPX
+2026-01-10 09:43:05,735 - data_collector - INFO - ✓ Saved AAPX.AMEX to /data/raw/AMEX/20260110/AAPX.csv (2,010 bytes)
+2026-01-10 09:43:05,761 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:43:05,763 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:43:05,772 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:43:07,777 - data_collector - INFO - 
+[7/20] AAPY: Kurv Yield Premium Apple [Aapl] ETF
+2026-01-10 09:43:07,779 - data_collector - INFO - Fetching d data for AAPY.AMEX
+2026-01-10 09:43:08,200 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:43:38,670 - data_collector - INFO - Retrieved 21 records for AAPY
+2026-01-10 09:43:38,711 - data_collector - INFO - ✓ Saved AAPY.AMEX to /data/raw/AMEX/20260110/AAPY.csv (2,031 bytes)
+2026-01-10 09:43:38,733 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:43:38,735 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:43:38,736 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:43:40,740 - data_collector - INFO - 
+[8/20] AAUM: Tema Alternative Asset Managers ETF
+2026-01-10 09:43:40,743 - data_collector - INFO - Fetching d data for AAUM.AMEX
+2026-01-10 09:43:41,115 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:44:11,572 - data_collector - INFO - Retrieved 21 records for AAUM
+2026-01-10 09:44:11,628 - data_collector - INFO - ✓ Saved AAUM.AMEX to /data/raw/AMEX/20260110/AAUM.csv (2,098 bytes)
+2026-01-10 09:44:11,653 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:44:11,658 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:44:11,665 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:44:13,675 - data_collector - INFO - 
+[9/20] ABEQ: Absolute Core Strategy ETF
+2026-01-10 09:44:13,677 - data_collector - INFO - Fetching d data for ABEQ.AMEX
+2026-01-10 09:44:14,049 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:44:44,672 - data_collector - INFO - Retrieved 21 records for ABEQ
+2026-01-10 09:44:44,720 - data_collector - INFO - ✓ Saved ABEQ.AMEX to /data/raw/AMEX/20260110/ABEQ.csv (1,987 bytes)
+2026-01-10 09:44:44,748 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:44:44,750 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:44:44,752 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:44:46,756 - data_collector - INFO - 
+[10/20] ABFL: Abacus Fcf Leaders ETF
+2026-01-10 09:44:46,759 - data_collector - INFO - Fetching d data for ABFL.AMEX
+2026-01-10 09:44:47,137 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:45:17,642 - data_collector - INFO - Retrieved 21 records for ABFL
+2026-01-10 09:45:17,700 - data_collector - INFO - ✓ Saved ABFL.AMEX to /data/raw/AMEX/20260110/ABFL.csv (2,004 bytes)
+2026-01-10 09:45:17,729 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:45:17,731 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:45:17,733 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:45:19,737 - data_collector - INFO - 
+[11/20] ABLD: Abacus Fcf Real Assets Leaders ETF
+2026-01-10 09:45:19,739 - data_collector - INFO - Fetching d data for ABLD.AMEX
+2026-01-10 09:45:20,119 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:45:50,572 - data_collector - INFO - Retrieved 21 records for ABLD
+2026-01-10 09:45:50,639 - data_collector - INFO - ✓ Saved ABLD.AMEX to /data/raw/AMEX/20260110/ABLD.csv (1,997 bytes)
+2026-01-10 09:45:50,673 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:45:50,675 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:45:50,677 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:45:52,680 - data_collector - INFO - 
+[12/20] ABLG: Abacus Fcf International Leaders ETF
+2026-01-10 09:45:52,681 - data_collector - INFO - Fetching d data for ABLG.AMEX
+2026-01-10 09:45:53,049 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:46:23,547 - data_collector - INFO - Retrieved 21 records for ABLG
+2026-01-10 09:46:23,581 - data_collector - INFO - ✓ Saved ABLG.AMEX to /data/raw/AMEX/20260110/ABLG.csv (2,033 bytes)
+2026-01-10 09:46:23,608 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:46:23,610 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:46:23,611 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:46:25,616 - data_collector - INFO - 
+[13/20] ABLS: Abacus Fcf Small Cap Leaders ETF
+2026-01-10 09:46:25,618 - data_collector - INFO - Fetching d data for ABLS.AMEX
+2026-01-10 09:46:26,000 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:46:56,520 - data_collector - INFO - Retrieved 21 records for ABLS
+2026-01-10 09:46:56,555 - data_collector - INFO - ✓ Saved ABLS.AMEX to /data/raw/AMEX/20260110/ABLS.csv (2,104 bytes)
+2026-01-10 09:46:56,581 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:46:56,582 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:46:56,589 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:46:58,592 - data_collector - INFO - 
+[14/20] ABNY: Yieldmax Abnb Option Income Strategy ETF
+2026-01-10 09:46:58,596 - data_collector - INFO - Fetching d data for ABNY.AMEX
+2026-01-10 09:46:59,019 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:47:29,964 - data_collector - INFO - Retrieved 21 records for ABNY
+2026-01-10 09:47:30,024 - data_collector - INFO - ✓ Saved ABNY.AMEX to /data/raw/AMEX/20260110/ABNY.csv (2,010 bytes)
+2026-01-10 09:47:30,052 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:47:30,053 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:47:30,054 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:47:32,057 - data_collector - INFO - 
+[15/20] ABOT: Abacus Fcf Innovation Leaders ETF
+2026-01-10 09:47:32,060 - data_collector - INFO - Fetching d data for ABOT.AMEX
+2026-01-10 09:47:32,489 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:48:03,048 - data_collector - INFO - Retrieved 21 records for ABOT
+2026-01-10 09:48:03,077 - data_collector - INFO - ✓ Saved ABOT.AMEX to /data/raw/AMEX/20260110/ABOT.csv (2,062 bytes)
+2026-01-10 09:48:03,099 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:48:03,100 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:48:03,102 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:48:05,105 - data_collector - INFO - 
+[16/20] ABXB: Abacus Flexible Bond Leaders ETF
+2026-01-10 09:48:05,107 - data_collector - INFO - Fetching d data for ABXB.AMEX
+2026-01-10 09:48:05,485 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:48:36,189 - data_collector - INFO - Retrieved 21 records for ABXB
+2026-01-10 09:48:36,235 - data_collector - INFO - ✓ Saved ABXB.AMEX to /data/raw/AMEX/20260110/ABXB.csv (2,032 bytes)
+2026-01-10 09:48:36,260 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:48:36,262 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:48:36,265 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:48:38,271 - data_collector - INFO - 
+[17/20] ACCS: Access Newswire Inc
+2026-01-10 09:48:38,273 - data_collector - INFO - Fetching d data for ACCS.AMEX
+2026-01-10 09:48:38,657 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:49:09,122 - data_collector - INFO - Retrieved 21 records for ACCS
+2026-01-10 09:49:09,171 - data_collector - INFO - ✓ Saved ACCS.AMEX to /data/raw/AMEX/20260110/ACCS.csv (1,901 bytes)
+2026-01-10 09:49:09,201 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:49:09,204 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:49:09,206 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:49:11,208 - data_collector - INFO - 
+[18/20] ACEI: Innovator Equity Autocallable Income Strategy ET
+2026-01-10 09:49:11,211 - data_collector - INFO - Fetching d data for ACEI.AMEX
+2026-01-10 09:49:11,612 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:49:42,067 - data_collector - INFO - Retrieved 21 records for ACEI
+2026-01-10 09:49:42,107 - data_collector - INFO - ✓ Saved ACEI.AMEX to /data/raw/AMEX/20260110/ACEI.csv (2,024 bytes)
+2026-01-10 09:49:42,130 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:49:42,131 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:49:42,132 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:49:44,136 - data_collector - INFO - 
+[19/20] ACES: Alps Clean Energy ETF
+2026-01-10 09:49:44,138 - data_collector - INFO - Fetching d data for ACES.AMEX
+2026-01-10 09:49:44,554 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:50:16,237 - data_collector - INFO - Retrieved 21 records for ACES
+2026-01-10 09:50:16,284 - data_collector - INFO - ✓ Saved ACES.AMEX to /data/raw/AMEX/20260110/ACES.csv (1,997 bytes)
+2026-01-10 09:50:16,309 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:50:16,310 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:50:16,315 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:50:18,319 - data_collector - INFO - 
+[20/20] ACGR: American Century Large Cap Growth ETF
+2026-01-10 09:50:18,321 - data_collector - INFO - Fetching d data for ACGR.AMEX
+2026-01-10 09:50:18,698 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:50:49,614 - data_collector - INFO - Retrieved 21 records for ACGR
+2026-01-10 09:50:49,646 - data_collector - INFO - ✓ Saved ACGR.AMEX to /data/raw/AMEX/20260110/ACGR.csv (2,058 bytes)
+2026-01-10 09:50:49,669 - data_collector - INFO - Saved 0 records to database
+2026-01-10 09:50:49,670 - data_collector - INFO -   ✓ 21 records
+2026-01-10 09:50:49,672 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:50:49,673 - data_collector - INFO - 
+📤 Uploading AMEX data to HDFS...
+2026-01-10 09:50:49,689 - data_collector - INFO - 📤 Uploading AMEX data to HDFS...
+2026-01-10 09:50:49,690 - hdfs_uploader - INFO - 📤 Uploading files for exchange: AMEX
+2026-01-10 09:50:49,692 - hdfs_uploader - INFO - Attempting to connect to HDFS (attempt 1/3)
+2026-01-10 09:50:49,693 - hdfs_uploader - INFO - Using WebHDFS URL: http://namenode:9870
+2026-01-10 09:50:49,693 - hdfs_uploader - INFO - HDFS User: root
+2026-01-10 09:50:49,694 - hdfs_uploader - INFO - HDFS Base Path: /stock_data
+2026-01-10 09:50:49,737 - hdfs.client - INFO - Instantiated <InsecureClient(url='http://namenode:9870')>.
+2026-01-10 09:50:49,738 - hdfs.client - INFO - Fetching status for '/'.
+2026-01-10 09:50:49,748 - hdfs_uploader - INFO - ✓ Successfully connected to HDFS
+2026-01-10 09:50:49,749 - hdfs_uploader - INFO - HDFS root status: type=DIRECTORY, permission=777
+2026-01-10 09:50:49,750 - hdfs.client - INFO - Fetching status for '/stock_data'.
+2026-01-10 09:50:49,756 - hdfs.client - INFO - Fetching status for '/stock_data/raw'.
+2026-01-10 09:50:49,761 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily'.
+2026-01-10 09:50:49,766 - hdfs.client - INFO - Fetching status for '/stock_data/processed'.
+2026-01-10 09:50:49,772 - hdfs.client - INFO - Fetching status for '/stock_data/reports'.
+2026-01-10 09:50:49,779 - hdfs_uploader - INFO - 📁 Scanning for files in /data/raw/AMEX
+2026-01-10 09:50:49,787 - hdfs_uploader - INFO -   Processing date: 20260104
+2026-01-10 09:50:49,807 - hdfs_uploader - INFO -     Uploading: AAA.csv
+2026-01-10 09:50:49,814 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/AAA.csv (1,954 bytes) to /stock_data/raw/daily/AMEX/20260104/AAA.csv
+2026-01-10 09:50:49,814 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:50:49,822 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/AAA.csv' to '/stock_data/raw/daily/AMEX/20260104/AAA.csv'.
+2026-01-10 09:50:49,823 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/AAA.csv'.
+2026-01-10 09:50:49,855 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/AAA.csv.temp-1768038649841737'.
+2026-01-10 09:50:50,337 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/AAA.csv' recursively.
+2026-01-10 09:50:50,352 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/AAA.csv.temp-1768038649841737' to '/stock_data/raw/daily/AMEX/20260104/AAA.csv'.
+2026-01-10 09:50:50,372 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/AAA.csv'.
+2026-01-10 09:50:50,377 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 1,954 bytes
+2026-01-10 09:50:50,378 - hdfs_uploader - INFO -     ✓ Uploaded AAA.csv
+2026-01-10 09:50:50,388 - hdfs_uploader - INFO -     Uploading: AAAA.csv
+2026-01-10 09:50:50,403 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/AAAA.csv (2,013 bytes) to /stock_data/raw/daily/AMEX/20260104/AAAA.csv
+2026-01-10 09:50:50,404 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:50:50,410 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/AAAA.csv' to '/stock_data/raw/daily/AMEX/20260104/AAAA.csv'.
+2026-01-10 09:50:50,411 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/AAAA.csv'.
+2026-01-10 09:50:50,436 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/AAAA.csv.temp-1768038650417928'.
+2026-01-10 09:50:50,883 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/AAAA.csv' recursively.
+2026-01-10 09:50:50,894 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/AAAA.csv.temp-1768038650417928' to '/stock_data/raw/daily/AMEX/20260104/AAAA.csv'.
+2026-01-10 09:50:50,905 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/AAAA.csv'.
+2026-01-10 09:50:50,911 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,013 bytes
+2026-01-10 09:50:50,917 - hdfs_uploader - INFO -     ✓ Uploaded AAAA.csv
+2026-01-10 09:50:50,937 - hdfs_uploader - INFO -     Uploading: AAAU.csv
+2026-01-10 09:50:50,954 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/AAAU.csv (2,039 bytes) to /stock_data/raw/daily/AMEX/20260104/AAAU.csv
+2026-01-10 09:50:50,956 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:50:50,969 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/AAAU.csv' to '/stock_data/raw/daily/AMEX/20260104/AAAU.csv'.
+2026-01-10 09:50:50,971 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/AAAU.csv'.
+2026-01-10 09:50:50,995 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/AAAU.csv.temp-1768038650977220'.
+2026-01-10 09:50:51,447 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/AAAU.csv' recursively.
+2026-01-10 09:50:51,457 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/AAAU.csv.temp-1768038650977220' to '/stock_data/raw/daily/AMEX/20260104/AAAU.csv'.
+2026-01-10 09:50:51,465 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/AAAU.csv'.
+2026-01-10 09:50:51,470 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,039 bytes
+2026-01-10 09:50:51,472 - hdfs_uploader - INFO -     ✓ Uploaded AAAU.csv
+2026-01-10 09:50:51,483 - hdfs_uploader - INFO -     Uploading: AAPR.csv
+2026-01-10 09:50:51,492 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/AAPR.csv (2,011 bytes) to /stock_data/raw/daily/AMEX/20260104/AAPR.csv
+2026-01-10 09:50:51,494 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:50:51,500 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/AAPR.csv' to '/stock_data/raw/daily/AMEX/20260104/AAPR.csv'.
+2026-01-10 09:50:51,500 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/AAPR.csv'.
+2026-01-10 09:50:51,516 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/AAPR.csv.temp-1768038651506294'.
+2026-01-10 09:50:51,966 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/AAPR.csv' recursively.
+2026-01-10 09:50:51,982 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/AAPR.csv.temp-1768038651506294' to '/stock_data/raw/daily/AMEX/20260104/AAPR.csv'.
+2026-01-10 09:50:51,992 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/AAPR.csv'.
+2026-01-10 09:50:52,005 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,011 bytes
+2026-01-10 09:50:52,006 - hdfs_uploader - INFO -     ✓ Uploaded AAPR.csv
+2026-01-10 09:50:52,030 - hdfs_uploader - INFO -     Uploading: AAPW.csv
+2026-01-10 09:50:52,057 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/AAPW.csv (1,995 bytes) to /stock_data/raw/daily/AMEX/20260104/AAPW.csv
+2026-01-10 09:50:52,065 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:50:52,076 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/AAPW.csv' to '/stock_data/raw/daily/AMEX/20260104/AAPW.csv'.
+2026-01-10 09:50:52,078 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/AAPW.csv'.
+2026-01-10 09:50:52,102 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/AAPW.csv.temp-1768038652087268'.
+2026-01-10 09:50:52,135 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/AAPW.csv' recursively.
+2026-01-10 09:50:52,144 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/AAPW.csv.temp-1768038652087268' to '/stock_data/raw/daily/AMEX/20260104/AAPW.csv'.
+2026-01-10 09:50:52,152 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/AAPW.csv'.
+2026-01-10 09:50:52,157 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 1,995 bytes
+2026-01-10 09:50:52,158 - hdfs_uploader - INFO -     ✓ Uploaded AAPW.csv
+2026-01-10 09:50:52,169 - hdfs_uploader - INFO -     Uploading: AAPX.csv
+2026-01-10 09:50:52,178 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/AAPX.csv (2,007 bytes) to /stock_data/raw/daily/AMEX/20260104/AAPX.csv
+2026-01-10 09:50:52,178 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:50:52,185 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/AAPX.csv' to '/stock_data/raw/daily/AMEX/20260104/AAPX.csv'.
+2026-01-10 09:50:52,186 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/AAPX.csv'.
+2026-01-10 09:50:52,211 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/AAPX.csv.temp-1768038652193301'.
+2026-01-10 09:50:52,665 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/AAPX.csv' recursively.
+2026-01-10 09:50:52,675 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/AAPX.csv.temp-1768038652193301' to '/stock_data/raw/daily/AMEX/20260104/AAPX.csv'.
+2026-01-10 09:50:52,687 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/AAPX.csv'.
+2026-01-10 09:50:52,697 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,007 bytes
+2026-01-10 09:50:52,701 - hdfs_uploader - INFO -     ✓ Uploaded AAPX.csv
+2026-01-10 09:50:52,717 - hdfs_uploader - INFO -     Uploading: AAPY.csv
+2026-01-10 09:50:52,725 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/AAPY.csv (2,018 bytes) to /stock_data/raw/daily/AMEX/20260104/AAPY.csv
+2026-01-10 09:50:52,726 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:50:52,731 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/AAPY.csv' to '/stock_data/raw/daily/AMEX/20260104/AAPY.csv'.
+2026-01-10 09:50:52,735 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/AAPY.csv'.
+2026-01-10 09:50:52,752 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/AAPY.csv.temp-1768038652741070'.
+2026-01-10 09:50:52,796 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/AAPY.csv' recursively.
+2026-01-10 09:50:52,802 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/AAPY.csv.temp-1768038652741070' to '/stock_data/raw/daily/AMEX/20260104/AAPY.csv'.
+2026-01-10 09:50:52,809 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/AAPY.csv'.
+2026-01-10 09:50:52,816 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,018 bytes
+2026-01-10 09:50:52,817 - hdfs_uploader - INFO -     ✓ Uploaded AAPY.csv
+2026-01-10 09:50:52,830 - hdfs_uploader - INFO -     Uploading: AAUM.csv
+2026-01-10 09:50:52,840 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/AAUM.csv (2,102 bytes) to /stock_data/raw/daily/AMEX/20260104/AAUM.csv
+2026-01-10 09:50:52,841 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:50:52,847 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/AAUM.csv' to '/stock_data/raw/daily/AMEX/20260104/AAUM.csv'.
+2026-01-10 09:50:52,848 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/AAUM.csv'.
+2026-01-10 09:50:52,862 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/AAUM.csv.temp-1768038652854191'.
+2026-01-10 09:50:52,897 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/AAUM.csv' recursively.
+2026-01-10 09:50:52,905 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/AAUM.csv.temp-1768038652854191' to '/stock_data/raw/daily/AMEX/20260104/AAUM.csv'.
+2026-01-10 09:50:52,915 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/AAUM.csv'.
+2026-01-10 09:50:52,920 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,102 bytes
+2026-01-10 09:50:52,921 - hdfs_uploader - INFO -     ✓ Uploaded AAUM.csv
+2026-01-10 09:50:52,932 - hdfs_uploader - INFO -     Uploading: ABEQ.csv
+2026-01-10 09:50:52,940 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/ABEQ.csv (1,995 bytes) to /stock_data/raw/daily/AMEX/20260104/ABEQ.csv
+2026-01-10 09:50:52,941 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:50:52,947 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/ABEQ.csv' to '/stock_data/raw/daily/AMEX/20260104/ABEQ.csv'.
+2026-01-10 09:50:52,948 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/ABEQ.csv'.
+2026-01-10 09:50:52,964 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/ABEQ.csv.temp-1768038652953341'.
+2026-01-10 09:50:53,421 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/ABEQ.csv' recursively.
+2026-01-10 09:50:53,430 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/ABEQ.csv.temp-1768038652953341' to '/stock_data/raw/daily/AMEX/20260104/ABEQ.csv'.
+2026-01-10 09:50:53,441 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/ABEQ.csv'.
+2026-01-10 09:50:53,449 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 1,995 bytes
+2026-01-10 09:50:53,450 - hdfs_uploader - INFO -     ✓ Uploaded ABEQ.csv
+2026-01-10 09:50:53,462 - hdfs_uploader - INFO -     Uploading: ABFL.csv
+2026-01-10 09:50:53,476 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/ABFL.csv (2,001 bytes) to /stock_data/raw/daily/AMEX/20260104/ABFL.csv
+2026-01-10 09:50:53,478 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:50:53,484 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/ABFL.csv' to '/stock_data/raw/daily/AMEX/20260104/ABFL.csv'.
+2026-01-10 09:50:53,485 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/ABFL.csv'.
+2026-01-10 09:50:53,504 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/ABFL.csv.temp-1768038653493848'.
+2026-01-10 09:50:53,949 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/ABFL.csv' recursively.
+2026-01-10 09:50:53,961 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/ABFL.csv.temp-1768038653493848' to '/stock_data/raw/daily/AMEX/20260104/ABFL.csv'.
+2026-01-10 09:50:53,976 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/ABFL.csv'.
+2026-01-10 09:50:53,983 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,001 bytes
+2026-01-10 09:50:53,984 - hdfs_uploader - INFO -     ✓ Uploaded ABFL.csv
+2026-01-10 09:50:53,996 - hdfs_uploader - INFO -     Uploading: ABLD.csv
+2026-01-10 09:50:54,006 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/ABLD.csv (2,003 bytes) to /stock_data/raw/daily/AMEX/20260104/ABLD.csv
+2026-01-10 09:50:54,007 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:50:54,013 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/ABLD.csv' to '/stock_data/raw/daily/AMEX/20260104/ABLD.csv'.
+2026-01-10 09:50:54,014 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/ABLD.csv'.
+2026-01-10 09:50:54,030 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/ABLD.csv.temp-1768038654019498'.
+2026-01-10 09:50:54,074 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/ABLD.csv' recursively.
+2026-01-10 09:50:54,086 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/ABLD.csv.temp-1768038654019498' to '/stock_data/raw/daily/AMEX/20260104/ABLD.csv'.
+2026-01-10 09:50:54,098 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/ABLD.csv'.
+2026-01-10 09:50:54,105 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,003 bytes
+2026-01-10 09:50:54,105 - hdfs_uploader - INFO -     ✓ Uploaded ABLD.csv
+2026-01-10 09:50:54,117 - hdfs_uploader - INFO -     Uploading: ABLG.csv
+2026-01-10 09:50:54,130 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/ABLG.csv (2,043 bytes) to /stock_data/raw/daily/AMEX/20260104/ABLG.csv
+2026-01-10 09:50:54,131 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:50:54,136 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/ABLG.csv' to '/stock_data/raw/daily/AMEX/20260104/ABLG.csv'.
+2026-01-10 09:50:54,137 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/ABLG.csv'.
+2026-01-10 09:50:54,159 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/ABLG.csv.temp-1768038654144375'.
+2026-01-10 09:50:54,200 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/ABLG.csv' recursively.
+2026-01-10 09:50:54,209 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/ABLG.csv.temp-1768038654144375' to '/stock_data/raw/daily/AMEX/20260104/ABLG.csv'.
+2026-01-10 09:50:54,219 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/ABLG.csv'.
+2026-01-10 09:50:54,226 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,043 bytes
+2026-01-10 09:50:54,226 - hdfs_uploader - INFO -     ✓ Uploaded ABLG.csv
+2026-01-10 09:50:54,237 - hdfs_uploader - INFO -     Uploading: ABLS.csv
+2026-01-10 09:50:54,248 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/ABLS.csv (2,100 bytes) to /stock_data/raw/daily/AMEX/20260104/ABLS.csv
+2026-01-10 09:50:54,249 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:50:54,256 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/ABLS.csv' to '/stock_data/raw/daily/AMEX/20260104/ABLS.csv'.
+2026-01-10 09:50:54,257 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/ABLS.csv'.
+2026-01-10 09:50:54,276 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/ABLS.csv.temp-1768038654264766'.
+2026-01-10 09:50:54,725 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/ABLS.csv' recursively.
+2026-01-10 09:50:54,734 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/ABLS.csv.temp-1768038654264766' to '/stock_data/raw/daily/AMEX/20260104/ABLS.csv'.
+2026-01-10 09:50:54,745 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/ABLS.csv'.
+2026-01-10 09:50:54,754 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,100 bytes
+2026-01-10 09:50:54,755 - hdfs_uploader - INFO -     ✓ Uploaded ABLS.csv
+2026-01-10 09:50:54,768 - hdfs_uploader - INFO -     Uploading: ABNY.csv
+2026-01-10 09:50:54,783 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/ABNY.csv (2,019 bytes) to /stock_data/raw/daily/AMEX/20260104/ABNY.csv
+2026-01-10 09:50:54,785 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:50:54,792 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/ABNY.csv' to '/stock_data/raw/daily/AMEX/20260104/ABNY.csv'.
+2026-01-10 09:50:54,794 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/ABNY.csv'.
+2026-01-10 09:50:54,819 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/ABNY.csv.temp-1768038654802371'.
+2026-01-10 09:50:55,268 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/ABNY.csv' recursively.
+2026-01-10 09:50:55,278 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/ABNY.csv.temp-1768038654802371' to '/stock_data/raw/daily/AMEX/20260104/ABNY.csv'.
+2026-01-10 09:50:55,289 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/ABNY.csv'.
+2026-01-10 09:50:55,296 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,019 bytes
+2026-01-10 09:50:55,299 - hdfs_uploader - INFO -     ✓ Uploaded ABNY.csv
+2026-01-10 09:50:55,316 - hdfs_uploader - INFO -     Uploading: ABOT.csv
+2026-01-10 09:50:55,347 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/ABOT.csv (2,060 bytes) to /stock_data/raw/daily/AMEX/20260104/ABOT.csv
+2026-01-10 09:50:55,349 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:50:55,361 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/ABOT.csv' to '/stock_data/raw/daily/AMEX/20260104/ABOT.csv'.
+2026-01-10 09:50:55,362 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/ABOT.csv'.
+2026-01-10 09:50:55,402 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/ABOT.csv.temp-1768038655381353'.
+2026-01-10 09:50:55,974 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/ABOT.csv' recursively.
+2026-01-10 09:50:55,986 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/ABOT.csv.temp-1768038655381353' to '/stock_data/raw/daily/AMEX/20260104/ABOT.csv'.
+2026-01-10 09:50:55,997 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/ABOT.csv'.
+2026-01-10 09:50:56,006 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,060 bytes
+2026-01-10 09:50:56,008 - hdfs_uploader - INFO -     ✓ Uploaded ABOT.csv
+2026-01-10 09:50:56,029 - hdfs_uploader - INFO -     Uploading: ABXB.csv
+2026-01-10 09:50:56,051 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/ABXB.csv (2,035 bytes) to /stock_data/raw/daily/AMEX/20260104/ABXB.csv
+2026-01-10 09:50:56,052 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:50:56,062 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/ABXB.csv' to '/stock_data/raw/daily/AMEX/20260104/ABXB.csv'.
+2026-01-10 09:50:56,065 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/ABXB.csv'.
+2026-01-10 09:50:56,087 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/ABXB.csv.temp-1768038656072206'.
+2026-01-10 09:50:56,544 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/ABXB.csv' recursively.
+2026-01-10 09:50:56,559 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/ABXB.csv.temp-1768038656072206' to '/stock_data/raw/daily/AMEX/20260104/ABXB.csv'.
+2026-01-10 09:50:56,581 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/ABXB.csv'.
+2026-01-10 09:50:56,587 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,035 bytes
+2026-01-10 09:50:56,590 - hdfs_uploader - INFO -     ✓ Uploaded ABXB.csv
+2026-01-10 09:50:56,607 - hdfs_uploader - INFO -     Uploading: ACCS.csv
+2026-01-10 09:50:56,632 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/ACCS.csv (1,895 bytes) to /stock_data/raw/daily/AMEX/20260104/ACCS.csv
+2026-01-10 09:50:56,633 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:50:56,641 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/ACCS.csv' to '/stock_data/raw/daily/AMEX/20260104/ACCS.csv'.
+2026-01-10 09:50:56,642 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/ACCS.csv'.
+2026-01-10 09:50:56,660 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/ACCS.csv.temp-1768038656649118'.
+2026-01-10 09:50:56,707 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/ACCS.csv' recursively.
+2026-01-10 09:50:56,722 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/ACCS.csv.temp-1768038656649118' to '/stock_data/raw/daily/AMEX/20260104/ACCS.csv'.
+2026-01-10 09:50:56,731 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/ACCS.csv'.
+2026-01-10 09:50:56,735 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 1,895 bytes
+2026-01-10 09:50:56,736 - hdfs_uploader - INFO -     ✓ Uploaded ACCS.csv
+2026-01-10 09:50:56,748 - hdfs_uploader - INFO -     Uploading: ACEI.csv
+2026-01-10 09:50:56,756 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/ACEI.csv (2,031 bytes) to /stock_data/raw/daily/AMEX/20260104/ACEI.csv
+2026-01-10 09:50:56,756 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:50:56,764 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/ACEI.csv' to '/stock_data/raw/daily/AMEX/20260104/ACEI.csv'.
+2026-01-10 09:50:56,766 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/ACEI.csv'.
+2026-01-10 09:50:56,785 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/ACEI.csv.temp-1768038656773801'.
+2026-01-10 09:50:56,827 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/ACEI.csv' recursively.
+2026-01-10 09:50:56,838 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/ACEI.csv.temp-1768038656773801' to '/stock_data/raw/daily/AMEX/20260104/ACEI.csv'.
+2026-01-10 09:50:56,845 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/ACEI.csv'.
+2026-01-10 09:50:56,850 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,031 bytes
+2026-01-10 09:50:56,850 - hdfs_uploader - INFO -     ✓ Uploaded ACEI.csv
+2026-01-10 09:50:56,859 - hdfs_uploader - INFO -     Uploading: ACES.csv
+2026-01-10 09:50:56,864 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/ACES.csv (1,999 bytes) to /stock_data/raw/daily/AMEX/20260104/ACES.csv
+2026-01-10 09:50:56,865 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:50:56,871 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/ACES.csv' to '/stock_data/raw/daily/AMEX/20260104/ACES.csv'.
+2026-01-10 09:50:56,872 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/ACES.csv'.
+2026-01-10 09:50:56,885 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/ACES.csv.temp-1768038656877775'.
+2026-01-10 09:50:57,346 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/ACES.csv' recursively.
+2026-01-10 09:50:57,359 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/ACES.csv.temp-1768038656877775' to '/stock_data/raw/daily/AMEX/20260104/ACES.csv'.
+2026-01-10 09:50:57,372 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/ACES.csv'.
+2026-01-10 09:50:57,381 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 1,999 bytes
+2026-01-10 09:50:57,382 - hdfs_uploader - INFO -     ✓ Uploaded ACES.csv
+2026-01-10 09:50:57,406 - hdfs_uploader - INFO -     Uploading: ACGR.csv
+2026-01-10 09:50:57,425 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260104/ACGR.csv (2,060 bytes) to /stock_data/raw/daily/AMEX/20260104/ACGR.csv
+2026-01-10 09:50:57,427 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104'.
+2026-01-10 09:50:57,435 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260104/ACGR.csv' to '/stock_data/raw/daily/AMEX/20260104/ACGR.csv'.
+2026-01-10 09:50:57,436 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260104/ACGR.csv'.
+2026-01-10 09:50:57,464 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260104/ACGR.csv.temp-1768038657443351'.
+2026-01-10 09:50:57,928 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260104/ACGR.csv' recursively.
+2026-01-10 09:50:57,936 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260104/ACGR.csv.temp-1768038657443351' to '/stock_data/raw/daily/AMEX/20260104/ACGR.csv'.
+2026-01-10 09:50:57,944 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260104/ACGR.csv'.
+2026-01-10 09:50:57,949 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,060 bytes
+2026-01-10 09:50:57,950 - hdfs_uploader - INFO -     ✓ Uploaded ACGR.csv
+2026-01-10 09:50:57,954 - hdfs_uploader - INFO -   Processing date: 20260110
+2026-01-10 09:50:57,971 - hdfs_uploader - INFO -     Uploading: AAA.csv
+2026-01-10 09:50:57,981 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/AAA.csv (1,942 bytes) to /stock_data/raw/daily/AMEX/20260110/AAA.csv
+2026-01-10 09:50:57,982 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:50:57,988 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/AAA.csv' to '/stock_data/raw/daily/AMEX/20260110/AAA.csv'.
+2026-01-10 09:50:57,989 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/AAA.csv'.
+2026-01-10 09:50:58,008 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/AAA.csv.temp-1768038657994821'.
+2026-01-10 09:50:58,463 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260110/AAA.csv' recursively.
+2026-01-10 09:50:58,473 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260110/AAA.csv.temp-1768038657994821' to '/stock_data/raw/daily/AMEX/20260110/AAA.csv'.
+2026-01-10 09:50:58,482 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/AAA.csv'.
+2026-01-10 09:50:58,489 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 1,942 bytes
+2026-01-10 09:50:58,490 - hdfs_uploader - INFO -     ✓ Uploaded AAA.csv
+2026-01-10 09:50:58,502 - hdfs_uploader - INFO -     Uploading: AAAA.csv
+2026-01-10 09:50:58,512 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/AAAA.csv (2,021 bytes) to /stock_data/raw/daily/AMEX/20260110/AAAA.csv
+2026-01-10 09:50:58,513 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:50:58,519 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/AAAA.csv' to '/stock_data/raw/daily/AMEX/20260110/AAAA.csv'.
+2026-01-10 09:50:58,520 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/AAAA.csv'.
+2026-01-10 09:50:58,542 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/AAAA.csv.temp-1768038658525770'.
+2026-01-10 09:50:58,989 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260110/AAAA.csv' recursively.
+2026-01-10 09:50:58,997 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260110/AAAA.csv.temp-1768038658525770' to '/stock_data/raw/daily/AMEX/20260110/AAAA.csv'.
+2026-01-10 09:50:59,006 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/AAAA.csv'.
+2026-01-10 09:50:59,011 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,021 bytes
+2026-01-10 09:50:59,012 - hdfs_uploader - INFO -     ✓ Uploaded AAAA.csv
+2026-01-10 09:50:59,027 - hdfs_uploader - INFO -     Uploading: AAAU.csv
+2026-01-10 09:50:59,038 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/AAAU.csv (2,042 bytes) to /stock_data/raw/daily/AMEX/20260110/AAAU.csv
+2026-01-10 09:50:59,039 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:50:59,046 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/AAAU.csv' to '/stock_data/raw/daily/AMEX/20260110/AAAU.csv'.
+2026-01-10 09:50:59,048 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/AAAU.csv'.
+2026-01-10 09:50:59,068 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/AAAU.csv.temp-1768038659053611'.
+2026-01-10 09:50:59,132 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260110/AAAU.csv' recursively.
+2026-01-10 09:50:59,140 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260110/AAAU.csv.temp-1768038659053611' to '/stock_data/raw/daily/AMEX/20260110/AAAU.csv'.
+2026-01-10 09:50:59,148 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/AAAU.csv'.
+2026-01-10 09:50:59,153 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,042 bytes
+2026-01-10 09:50:59,154 - hdfs_uploader - INFO -     ✓ Uploaded AAAU.csv
+2026-01-10 09:50:59,163 - hdfs_uploader - INFO -     Uploading: AAPR.csv
+2026-01-10 09:50:59,173 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/AAPR.csv (2,011 bytes) to /stock_data/raw/daily/AMEX/20260110/AAPR.csv
+2026-01-10 09:50:59,174 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:50:59,179 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/AAPR.csv' to '/stock_data/raw/daily/AMEX/20260110/AAPR.csv'.
+2026-01-10 09:50:59,180 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/AAPR.csv'.
+2026-01-10 09:50:59,196 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/AAPR.csv.temp-1768038659187235'.
+2026-01-10 09:50:59,241 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260110/AAPR.csv' recursively.
+2026-01-10 09:50:59,249 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260110/AAPR.csv.temp-1768038659187235' to '/stock_data/raw/daily/AMEX/20260110/AAPR.csv'.
+2026-01-10 09:50:59,262 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/AAPR.csv'.
+2026-01-10 09:50:59,267 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,011 bytes
+2026-01-10 09:50:59,268 - hdfs_uploader - INFO -     ✓ Uploaded AAPR.csv
+2026-01-10 09:50:59,278 - hdfs_uploader - INFO -     Uploading: AAPW.csv
+2026-01-10 09:50:59,285 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/AAPW.csv (1,983 bytes) to /stock_data/raw/daily/AMEX/20260110/AAPW.csv
+2026-01-10 09:50:59,286 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:50:59,291 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/AAPW.csv' to '/stock_data/raw/daily/AMEX/20260110/AAPW.csv'.
+2026-01-10 09:50:59,292 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/AAPW.csv'.
+2026-01-10 09:50:59,305 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/AAPW.csv.temp-1768038659297135'.
+2026-01-10 09:50:59,341 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260110/AAPW.csv' recursively.
+2026-01-10 09:50:59,347 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260110/AAPW.csv.temp-1768038659297135' to '/stock_data/raw/daily/AMEX/20260110/AAPW.csv'.
+2026-01-10 09:50:59,357 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/AAPW.csv'.
+2026-01-10 09:50:59,363 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 1,983 bytes
+2026-01-10 09:50:59,364 - hdfs_uploader - INFO -     ✓ Uploaded AAPW.csv
+2026-01-10 09:50:59,374 - hdfs_uploader - INFO -     Uploading: AAPX.csv
+2026-01-10 09:50:59,381 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/AAPX.csv (2,010 bytes) to /stock_data/raw/daily/AMEX/20260110/AAPX.csv
+2026-01-10 09:50:59,382 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:50:59,388 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/AAPX.csv' to '/stock_data/raw/daily/AMEX/20260110/AAPX.csv'.
+2026-01-10 09:50:59,390 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/AAPX.csv'.
+2026-01-10 09:50:59,411 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/AAPX.csv.temp-1768038659398861'.
+2026-01-10 09:50:59,448 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260110/AAPX.csv' recursively.
+2026-01-10 09:50:59,458 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260110/AAPX.csv.temp-1768038659398861' to '/stock_data/raw/daily/AMEX/20260110/AAPX.csv'.
+2026-01-10 09:50:59,465 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/AAPX.csv'.
+2026-01-10 09:50:59,471 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,010 bytes
+2026-01-10 09:50:59,471 - hdfs_uploader - INFO -     ✓ Uploaded AAPX.csv
+2026-01-10 09:50:59,482 - hdfs_uploader - INFO -     Uploading: AAPY.csv
+2026-01-10 09:50:59,490 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/AAPY.csv (2,031 bytes) to /stock_data/raw/daily/AMEX/20260110/AAPY.csv
+2026-01-10 09:50:59,491 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:50:59,498 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/AAPY.csv' to '/stock_data/raw/daily/AMEX/20260110/AAPY.csv'.
+2026-01-10 09:50:59,499 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/AAPY.csv'.
+2026-01-10 09:50:59,515 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/AAPY.csv.temp-1768038659504841'.
+2026-01-10 09:50:59,956 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260110/AAPY.csv' recursively.
+2026-01-10 09:50:59,964 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260110/AAPY.csv.temp-1768038659504841' to '/stock_data/raw/daily/AMEX/20260110/AAPY.csv'.
+2026-01-10 09:50:59,973 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/AAPY.csv'.
+2026-01-10 09:50:59,979 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,031 bytes
+2026-01-10 09:50:59,980 - hdfs_uploader - INFO -     ✓ Uploaded AAPY.csv
+2026-01-10 09:50:59,994 - hdfs_uploader - INFO -     Uploading: AAUM.csv
+2026-01-10 09:51:00,007 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/AAUM.csv (2,098 bytes) to /stock_data/raw/daily/AMEX/20260110/AAUM.csv
+2026-01-10 09:51:00,008 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:51:00,013 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/AAUM.csv' to '/stock_data/raw/daily/AMEX/20260110/AAUM.csv'.
+2026-01-10 09:51:00,014 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/AAUM.csv'.
+2026-01-10 09:51:00,042 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/AAUM.csv.temp-1768038660022120'.
+2026-01-10 09:51:00,485 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260110/AAUM.csv' recursively.
+2026-01-10 09:51:00,494 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260110/AAUM.csv.temp-1768038660022120' to '/stock_data/raw/daily/AMEX/20260110/AAUM.csv'.
+2026-01-10 09:51:00,523 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/AAUM.csv'.
+2026-01-10 09:51:00,532 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,098 bytes
+2026-01-10 09:51:00,533 - hdfs_uploader - INFO -     ✓ Uploaded AAUM.csv
+2026-01-10 09:51:00,552 - hdfs_uploader - INFO -     Uploading: ABEQ.csv
+2026-01-10 09:51:00,569 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/ABEQ.csv (1,987 bytes) to /stock_data/raw/daily/AMEX/20260110/ABEQ.csv
+2026-01-10 09:51:00,570 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:51:00,584 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/ABEQ.csv' to '/stock_data/raw/daily/AMEX/20260110/ABEQ.csv'.
+2026-01-10 09:51:00,586 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/ABEQ.csv'.
+2026-01-10 09:51:00,613 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/ABEQ.csv.temp-1768038660595496'.
+2026-01-10 09:51:00,652 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260110/ABEQ.csv' recursively.
+2026-01-10 09:51:00,662 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260110/ABEQ.csv.temp-1768038660595496' to '/stock_data/raw/daily/AMEX/20260110/ABEQ.csv'.
+2026-01-10 09:51:00,668 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/ABEQ.csv'.
+2026-01-10 09:51:00,677 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 1,987 bytes
+2026-01-10 09:51:00,678 - hdfs_uploader - INFO -     ✓ Uploaded ABEQ.csv
+2026-01-10 09:51:00,701 - hdfs_uploader - INFO -     Uploading: ABFL.csv
+2026-01-10 09:51:00,716 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/ABFL.csv (2,004 bytes) to /stock_data/raw/daily/AMEX/20260110/ABFL.csv
+2026-01-10 09:51:00,717 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:51:00,725 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/ABFL.csv' to '/stock_data/raw/daily/AMEX/20260110/ABFL.csv'.
+2026-01-10 09:51:00,727 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/ABFL.csv'.
+2026-01-10 09:51:00,742 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/ABFL.csv.temp-1768038660734849'.
+2026-01-10 09:51:00,777 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260110/ABFL.csv' recursively.
+2026-01-10 09:51:00,786 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260110/ABFL.csv.temp-1768038660734849' to '/stock_data/raw/daily/AMEX/20260110/ABFL.csv'.
+2026-01-10 09:51:00,796 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/ABFL.csv'.
+2026-01-10 09:51:00,801 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,004 bytes
+2026-01-10 09:51:00,803 - hdfs_uploader - INFO -     ✓ Uploaded ABFL.csv
+2026-01-10 09:51:00,812 - hdfs_uploader - INFO -     Uploading: ABLD.csv
+2026-01-10 09:51:00,824 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/ABLD.csv (1,997 bytes) to /stock_data/raw/daily/AMEX/20260110/ABLD.csv
+2026-01-10 09:51:00,826 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:51:00,835 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/ABLD.csv' to '/stock_data/raw/daily/AMEX/20260110/ABLD.csv'.
+2026-01-10 09:51:00,836 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/ABLD.csv'.
+2026-01-10 09:51:00,852 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/ABLD.csv.temp-1768038660841816'.
+2026-01-10 09:51:00,886 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260110/ABLD.csv' recursively.
+2026-01-10 09:51:00,892 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260110/ABLD.csv.temp-1768038660841816' to '/stock_data/raw/daily/AMEX/20260110/ABLD.csv'.
+2026-01-10 09:51:00,899 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/ABLD.csv'.
+2026-01-10 09:51:00,905 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 1,997 bytes
+2026-01-10 09:51:00,905 - hdfs_uploader - INFO -     ✓ Uploaded ABLD.csv
+2026-01-10 09:51:00,916 - hdfs_uploader - INFO -     Uploading: ABLG.csv
+2026-01-10 09:51:00,924 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/ABLG.csv (2,033 bytes) to /stock_data/raw/daily/AMEX/20260110/ABLG.csv
+2026-01-10 09:51:00,925 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:51:00,930 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/ABLG.csv' to '/stock_data/raw/daily/AMEX/20260110/ABLG.csv'.
+2026-01-10 09:51:00,931 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/ABLG.csv'.
+2026-01-10 09:51:00,949 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/ABLG.csv.temp-1768038660936559'.
+2026-01-10 09:51:00,984 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260110/ABLG.csv' recursively.
+2026-01-10 09:51:00,991 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260110/ABLG.csv.temp-1768038660936559' to '/stock_data/raw/daily/AMEX/20260110/ABLG.csv'.
+2026-01-10 09:51:00,998 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/ABLG.csv'.
+2026-01-10 09:51:01,003 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,033 bytes
+2026-01-10 09:51:01,004 - hdfs_uploader - INFO -     ✓ Uploaded ABLG.csv
+2026-01-10 09:51:01,014 - hdfs_uploader - INFO -     Uploading: ABLS.csv
+2026-01-10 09:51:01,024 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/ABLS.csv (2,104 bytes) to /stock_data/raw/daily/AMEX/20260110/ABLS.csv
+2026-01-10 09:51:01,024 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:51:01,029 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/ABLS.csv' to '/stock_data/raw/daily/AMEX/20260110/ABLS.csv'.
+2026-01-10 09:51:01,030 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/ABLS.csv'.
+2026-01-10 09:51:01,046 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/ABLS.csv.temp-1768038661035241'.
+2026-01-10 09:51:01,080 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260110/ABLS.csv' recursively.
+2026-01-10 09:51:01,087 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260110/ABLS.csv.temp-1768038661035241' to '/stock_data/raw/daily/AMEX/20260110/ABLS.csv'.
+2026-01-10 09:51:01,093 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/ABLS.csv'.
+2026-01-10 09:51:01,099 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,104 bytes
+2026-01-10 09:51:01,101 - hdfs_uploader - INFO -     ✓ Uploaded ABLS.csv
+2026-01-10 09:51:01,112 - hdfs_uploader - INFO -     Uploading: ABNY.csv
+2026-01-10 09:51:01,121 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/ABNY.csv (2,010 bytes) to /stock_data/raw/daily/AMEX/20260110/ABNY.csv
+2026-01-10 09:51:01,122 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:51:01,127 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/ABNY.csv' to '/stock_data/raw/daily/AMEX/20260110/ABNY.csv'.
+2026-01-10 09:51:01,128 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/ABNY.csv'.
+2026-01-10 09:51:01,145 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/ABNY.csv.temp-1768038661133295'.
+2026-01-10 09:51:01,177 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260110/ABNY.csv' recursively.
+2026-01-10 09:51:01,185 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260110/ABNY.csv.temp-1768038661133295' to '/stock_data/raw/daily/AMEX/20260110/ABNY.csv'.
+2026-01-10 09:51:01,192 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/ABNY.csv'.
+2026-01-10 09:51:01,198 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,010 bytes
+2026-01-10 09:51:01,199 - hdfs_uploader - INFO -     ✓ Uploaded ABNY.csv
+2026-01-10 09:51:01,208 - hdfs_uploader - INFO -     Uploading: ABOT.csv
+2026-01-10 09:51:01,216 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/ABOT.csv (2,062 bytes) to /stock_data/raw/daily/AMEX/20260110/ABOT.csv
+2026-01-10 09:51:01,217 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:51:01,221 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/ABOT.csv' to '/stock_data/raw/daily/AMEX/20260110/ABOT.csv'.
+2026-01-10 09:51:01,222 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/ABOT.csv'.
+2026-01-10 09:51:01,241 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/ABOT.csv.temp-1768038661228373'.
+2026-01-10 09:51:01,292 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260110/ABOT.csv' recursively.
+2026-01-10 09:51:01,305 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260110/ABOT.csv.temp-1768038661228373' to '/stock_data/raw/daily/AMEX/20260110/ABOT.csv'.
+2026-01-10 09:51:01,314 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/ABOT.csv'.
+2026-01-10 09:51:01,323 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,062 bytes
+2026-01-10 09:51:01,324 - hdfs_uploader - INFO -     ✓ Uploaded ABOT.csv
+2026-01-10 09:51:01,337 - hdfs_uploader - INFO -     Uploading: ABXB.csv
+2026-01-10 09:51:01,347 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/ABXB.csv (2,032 bytes) to /stock_data/raw/daily/AMEX/20260110/ABXB.csv
+2026-01-10 09:51:01,348 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:51:01,356 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/ABXB.csv' to '/stock_data/raw/daily/AMEX/20260110/ABXB.csv'.
+2026-01-10 09:51:01,357 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/ABXB.csv'.
+2026-01-10 09:51:01,376 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/ABXB.csv.temp-1768038661367168'.
+2026-01-10 09:51:01,412 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260110/ABXB.csv' recursively.
+2026-01-10 09:51:01,424 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260110/ABXB.csv.temp-1768038661367168' to '/stock_data/raw/daily/AMEX/20260110/ABXB.csv'.
+2026-01-10 09:51:01,433 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/ABXB.csv'.
+2026-01-10 09:51:01,438 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,032 bytes
+2026-01-10 09:51:01,439 - hdfs_uploader - INFO -     ✓ Uploaded ABXB.csv
+2026-01-10 09:51:01,448 - hdfs_uploader - INFO -     Uploading: ACCS.csv
+2026-01-10 09:51:01,455 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/ACCS.csv (1,901 bytes) to /stock_data/raw/daily/AMEX/20260110/ACCS.csv
+2026-01-10 09:51:01,456 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:51:01,461 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/ACCS.csv' to '/stock_data/raw/daily/AMEX/20260110/ACCS.csv'.
+2026-01-10 09:51:01,462 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/ACCS.csv'.
+2026-01-10 09:51:01,475 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/ACCS.csv.temp-1768038661466637'.
+2026-01-10 09:51:01,923 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260110/ACCS.csv' recursively.
+2026-01-10 09:51:01,931 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260110/ACCS.csv.temp-1768038661466637' to '/stock_data/raw/daily/AMEX/20260110/ACCS.csv'.
+2026-01-10 09:51:01,938 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/ACCS.csv'.
+2026-01-10 09:51:01,945 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 1,901 bytes
+2026-01-10 09:51:01,946 - hdfs_uploader - INFO -     ✓ Uploaded ACCS.csv
+2026-01-10 09:51:01,958 - hdfs_uploader - INFO -     Uploading: ACEI.csv
+2026-01-10 09:51:01,969 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/ACEI.csv (2,024 bytes) to /stock_data/raw/daily/AMEX/20260110/ACEI.csv
+2026-01-10 09:51:01,970 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:51:01,981 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/ACEI.csv' to '/stock_data/raw/daily/AMEX/20260110/ACEI.csv'.
+2026-01-10 09:51:01,985 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/ACEI.csv'.
+2026-01-10 09:51:02,007 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/ACEI.csv.temp-1768038661996870'.
+2026-01-10 09:51:02,459 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260110/ACEI.csv' recursively.
+2026-01-10 09:51:02,468 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260110/ACEI.csv.temp-1768038661996870' to '/stock_data/raw/daily/AMEX/20260110/ACEI.csv'.
+2026-01-10 09:51:02,476 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/ACEI.csv'.
+2026-01-10 09:51:02,481 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,024 bytes
+2026-01-10 09:51:02,482 - hdfs_uploader - INFO -     ✓ Uploaded ACEI.csv
+2026-01-10 09:51:02,494 - hdfs_uploader - INFO -     Uploading: ACES.csv
+2026-01-10 09:51:02,504 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/ACES.csv (1,997 bytes) to /stock_data/raw/daily/AMEX/20260110/ACES.csv
+2026-01-10 09:51:02,505 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:51:02,514 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/ACES.csv' to '/stock_data/raw/daily/AMEX/20260110/ACES.csv'.
+2026-01-10 09:51:02,515 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/ACES.csv'.
+2026-01-10 09:51:02,536 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/ACES.csv.temp-1768038662522178'.
+2026-01-10 09:51:02,579 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260110/ACES.csv' recursively.
+2026-01-10 09:51:02,589 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260110/ACES.csv.temp-1768038662522178' to '/stock_data/raw/daily/AMEX/20260110/ACES.csv'.
+2026-01-10 09:51:02,596 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/ACES.csv'.
+2026-01-10 09:51:02,603 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 1,997 bytes
+2026-01-10 09:51:02,604 - hdfs_uploader - INFO -     ✓ Uploaded ACES.csv
+2026-01-10 09:51:02,614 - hdfs_uploader - INFO -     Uploading: ACGR.csv
+2026-01-10 09:51:02,622 - hdfs_uploader - INFO - Uploading /data/raw/AMEX/20260110/ACGR.csv (2,058 bytes) to /stock_data/raw/daily/AMEX/20260110/ACGR.csv
+2026-01-10 09:51:02,623 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110'.
+2026-01-10 09:51:02,629 - hdfs.client - INFO - Uploading '/data/raw/AMEX/20260110/ACGR.csv' to '/stock_data/raw/daily/AMEX/20260110/ACGR.csv'.
+2026-01-10 09:51:02,630 - hdfs.client - INFO - Listing '/stock_data/raw/daily/AMEX/20260110/ACGR.csv'.
+2026-01-10 09:51:02,648 - hdfs.client - INFO - Writing to '/stock_data/raw/daily/AMEX/20260110/ACGR.csv.temp-1768038662637535'.
+2026-01-10 09:51:02,689 - hdfs.client - INFO - Deleting '/stock_data/raw/daily/AMEX/20260110/ACGR.csv' recursively.
+2026-01-10 09:51:02,697 - hdfs.client - INFO - Renaming '/stock_data/raw/daily/AMEX/20260110/ACGR.csv.temp-1768038662637535' to '/stock_data/raw/daily/AMEX/20260110/ACGR.csv'.
+2026-01-10 09:51:02,705 - hdfs.client - INFO - Fetching status for '/stock_data/raw/daily/AMEX/20260110/ACGR.csv'.
+2026-01-10 09:51:02,710 - hdfs_uploader - INFO - ✓ Successfully uploaded to HDFS. File size: 2,058 bytes
+2026-01-10 09:51:02,711 - hdfs_uploader - INFO -     ✓ Uploaded ACGR.csv
+2026-01-10 09:51:02,712 - hdfs_uploader - INFO - 📊 Exchange AMEX upload summary: 40 successful, 0 failed
+2026-01-10 09:51:02,713 - data_collector - INFO - ✅ Successfully uploaded 40 files for AMEX to HDFS
+2026-01-10 09:51:02,714 - data_collector - INFO - ✓ AMEX uploaded to HDFS: 40 files
+2026-01-10 09:51:02,715 - data_collector - INFO - 
+========================================
+2026-01-10 09:51:02,716 - data_collector - INFO - EXCHANGE SUMMARY: AMEX
+2026-01-10 09:51:02,716 - data_collector - INFO - ========================================
+2026-01-10 09:51:02,717 - data_collector - INFO - Successful symbols: 20
+2026-01-10 09:51:02,718 - data_collector - INFO - Failed symbols: 0
+2026-01-10 09:51:02,721 - data_collector - INFO - Data points: 420
+2026-01-10 09:51:02,722 - data_collector - INFO - Files uploaded to HDFS: 40
+2026-01-10 09:51:02,723 - data_collector - INFO - Database success: 0
+2026-01-10 09:51:02,724 - data_collector - INFO - Database failed: 20
+2026-01-10 09:51:02,725 - data_collector - INFO - 
+✓ AMEX completed and uploaded to HDFS:
+2026-01-10 09:51:02,725 - data_collector - INFO -   Successful symbols: 20
+2026-01-10 09:51:02,726 - data_collector - INFO -   Failed symbols: 0
+2026-01-10 09:51:02,726 - data_collector - INFO -   Data points: 420
+2026-01-10 09:51:02,727 - data_collector - INFO -   HDFS uploads: 40
+2026-01-10 09:51:02,727 - data_collector - INFO - 
+Waiting 5s before next exchange...
+2026-01-10 09:51:07,733 - data_collector - INFO - 
+============================================================
+2026-01-10 09:51:07,736 - data_collector - INFO - STARTING COLLECTION FOR AMS (Euronext - Amsterdam)
+2026-01-10 09:51:07,738 - data_collector - INFO - Progress: 2/29
+2026-01-10 09:51:07,742 - data_collector - INFO - ============================================================
+2026-01-10 09:51:07,756 - data_collector - INFO - 
+============================================================
+2026-01-10 09:51:07,759 - data_collector - INFO - COLLECTING FROM AMS
+2026-01-10 09:51:07,761 - data_collector - INFO - Config: 20 symbols, 30 days of data
+2026-01-10 09:51:07,762 - data_collector - INFO - ============================================================
+2026-01-10 09:51:07,766 - data_collector - INFO - Fetching symbols for AMS...
+2026-01-10 09:51:08,155 - data_collector - ERROR - Unauthorized - Check API key
+2026-01-10 09:51:08,159 - data_collector - WARNING - No symbols returned for AMS. Data: {}
+2026-01-10 09:51:08,160 - data_collector - ERROR - No symbols found for AMS
+2026-01-10 09:51:08,163 - data_collector - INFO - 
+✓ AMS completed and uploaded to HDFS:
+2026-01-10 09:51:08,164 - data_collector - INFO -   Successful symbols: 0
+2026-01-10 09:51:08,166 - data_collector - INFO -   Failed symbols: 0
+2026-01-10 09:51:08,168 - data_collector - INFO -   Data points: 0
+2026-01-10 09:51:08,170 - data_collector - INFO -   HDFS uploads: 0
+2026-01-10 09:51:08,171 - data_collector - INFO - 
+Waiting 5s before next exchange...
+2026-01-10 09:51:13,179 - data_collector - INFO - 
+============================================================
+2026-01-10 09:51:13,181 - data_collector - INFO - STARTING COLLECTION FOR ASX (Australian Securities Exchange)
+2026-01-10 09:51:13,185 - data_collector - INFO - Progress: 3/29
+2026-01-10 09:51:13,187 - data_collector - INFO - ============================================================
+2026-01-10 09:51:13,191 - data_collector - INFO - 
+============================================================
+2026-01-10 09:51:13,193 - data_collector - INFO - COLLECTING FROM ASX
+2026-01-10 09:51:13,195 - data_collector - INFO - Config: 20 symbols, 30 days of data
+2026-01-10 09:51:13,198 - data_collector - INFO - ============================================================
+2026-01-10 09:51:13,200 - data_collector - INFO - Fetching symbols for ASX...
+2026-01-10 09:51:13,594 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:51:43,998 - data_collector - ERROR - Unauthorized - Check API key
+2026-01-10 09:51:44,004 - data_collector - WARNING - No symbols returned for ASX. Data: {}
+2026-01-10 09:51:44,006 - data_collector - ERROR - No symbols found for ASX
+2026-01-10 09:51:44,007 - data_collector - INFO - 
+✓ ASX completed and uploaded to HDFS:
+2026-01-10 09:51:44,008 - data_collector - INFO -   Successful symbols: 0
+2026-01-10 09:51:44,009 - data_collector - INFO -   Failed symbols: 0
+2026-01-10 09:51:44,010 - data_collector - INFO -   Data points: 0
+2026-01-10 09:51:44,011 - data_collector - INFO -   HDFS uploads: 0
+2026-01-10 09:51:44,012 - data_collector - INFO - 
+Waiting 5s before next exchange...
+2026-01-10 09:51:49,012 - data_collector - INFO - 
+============================================================
+2026-01-10 09:51:49,021 - data_collector - INFO - STARTING COLLECTION FOR BRU (Euronext - Brussels)
+2026-01-10 09:51:49,023 - data_collector - INFO - Progress: 4/29
+2026-01-10 09:51:49,024 - data_collector - INFO - ============================================================
+2026-01-10 09:51:49,025 - data_collector - INFO - 
+============================================================
+2026-01-10 09:51:49,026 - data_collector - INFO - COLLECTING FROM BRU
+2026-01-10 09:51:49,027 - data_collector - INFO - Config: 20 symbols, 30 days of data
+2026-01-10 09:51:49,028 - data_collector - INFO - ============================================================
+2026-01-10 09:51:49,029 - data_collector - INFO - Fetching symbols for BRU...
+2026-01-10 09:51:49,419 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:52:19,809 - data_collector - ERROR - Unauthorized - Check API key
+2026-01-10 09:52:19,811 - data_collector - WARNING - No symbols returned for BRU. Data: {}
+2026-01-10 09:52:19,812 - data_collector - ERROR - No symbols found for BRU
+2026-01-10 09:52:19,813 - data_collector - INFO - 
+✓ BRU completed and uploaded to HDFS:
+2026-01-10 09:52:19,814 - data_collector - INFO -   Successful symbols: 0
+2026-01-10 09:52:19,816 - data_collector - INFO -   Failed symbols: 0
+2026-01-10 09:52:19,817 - data_collector - INFO -   Data points: 0
+2026-01-10 09:52:19,819 - data_collector - INFO -   HDFS uploads: 0
+2026-01-10 09:52:19,821 - data_collector - INFO - 
+Waiting 5s before next exchange...
+2026-01-10 09:52:24,835 - data_collector - INFO - 
+============================================================
+2026-01-10 09:52:24,838 - data_collector - INFO - STARTING COLLECTION FOR CC (Cryptocurrencies)
+2026-01-10 09:52:24,846 - data_collector - INFO - Progress: 5/29
+2026-01-10 09:52:24,848 - data_collector - INFO - ============================================================
+2026-01-10 09:52:24,850 - data_collector - INFO - 
+============================================================
+2026-01-10 09:52:24,852 - data_collector - INFO - COLLECTING FROM CC
+2026-01-10 09:52:24,854 - data_collector - INFO - Config: 20 symbols, 30 days of data
+2026-01-10 09:52:24,856 - data_collector - INFO - ============================================================
+2026-01-10 09:52:24,858 - data_collector - INFO - Fetching symbols for CC...
+2026-01-10 09:52:25,346 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:53:19,340 - data_collector - INFO - Found 20 symbols for CC
+2026-01-10 09:53:19,342 - data_collector - INFO - Processing 20 symbols...
+2026-01-10 09:53:19,344 - data_collector - INFO - 
+[1/20] 00-USD: 00 Token USD
+2026-01-10 09:53:19,346 - data_collector - INFO - Fetching d data for 00-USD.CC
+2026-01-10 09:53:19,939 - data_collector - INFO - Retrieved 23 records for 00-USD
+2026-01-10 09:53:20,011 - data_collector - INFO - ✓ Saved 00-USD.CC to /data/raw/CC/20260110/00-USD.csv (2,433 bytes)
+2026-01-10 09:53:20,058 - data_collector - INFO - Saved 5 records to database
+2026-01-10 09:53:20,060 - data_collector - INFO -   ✓ 23 records
+2026-01-10 09:53:20,063 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:53:22,067 - data_collector - INFO - 
+[2/20] 0G-USD: 0G
+2026-01-10 09:53:22,070 - data_collector - INFO - Fetching d data for 0G-USD.CC
+2026-01-10 09:53:22,460 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:53:53,126 - data_collector - INFO - Retrieved 23 records for 0G-USD
+2026-01-10 09:53:53,165 - data_collector - INFO - ✓ Saved 0G-USD.CC to /data/raw/CC/20260110/0G-USD.csv (2,495 bytes)
+2026-01-10 09:53:53,206 - data_collector - INFO - Saved 5 records to database
+2026-01-10 09:53:53,208 - data_collector - INFO -   ✓ 23 records
+2026-01-10 09:53:53,210 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:53:55,213 - data_collector - INFO - 
+[3/20] 0X0-USD: 0x0.ai USD
+2026-01-10 09:53:55,214 - data_collector - INFO - Fetching d data for 0X0-USD.CC
+2026-01-10 09:53:55,717 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:54:26,290 - data_collector - INFO - Retrieved 23 records for 0X0-USD
+2026-01-10 09:54:26,336 - data_collector - INFO - ✓ Saved 0X0-USD.CC to /data/raw/CC/20260110/0X0-USD.csv (2,468 bytes)
+2026-01-10 09:54:26,372 - data_collector - INFO - Saved 5 records to database
+2026-01-10 09:54:26,373 - data_collector - INFO -   ✓ 23 records
+2026-01-10 09:54:26,376 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:54:28,379 - data_collector - INFO - 
+[4/20] 0xBTC-USD: 0xBitcoin
+2026-01-10 09:54:28,382 - data_collector - INFO - Fetching d data for 0xBTC-USD.CC
+2026-01-10 09:54:28,765 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:54:59,476 - data_collector - INFO - Retrieved 14 records for 0xBTC-USD
+2026-01-10 09:54:59,530 - data_collector - INFO - ✓ Saved 0xBTC-USD.CC to /data/raw/CC/20260110/0xBTC-USD.csv (1,554 bytes)
+2026-01-10 09:54:59,555 - data_collector - INFO - Saved 4 records to database
+2026-01-10 09:54:59,556 - data_collector - INFO -   ✓ 14 records
+2026-01-10 09:54:59,559 - data_collector - INFO -     Date range: 2025-12-12 to 2026-01-09
+2026-01-10 09:55:01,565 - data_collector - INFO - 
+[5/20] 10SET-USD: Tenset
+2026-01-10 09:55:01,568 - data_collector - INFO - Fetching d data for 10SET-USD.CC
+2026-01-10 09:55:02,430 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:55:33,875 - data_collector - INFO - Retrieved 23 records for 10SET-USD
+2026-01-10 09:55:33,893 - data_collector - INFO - ✓ Saved 10SET-USD.CC to /data/raw/CC/20260110/10SET-USD.csv (2,589 bytes)
+2026-01-10 09:55:33,924 - data_collector - INFO - Saved 5 records to database
+2026-01-10 09:55:33,926 - data_collector - INFO -   ✓ 23 records
+2026-01-10 09:55:33,928 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:55:35,932 - data_collector - INFO - 
+[6/20] 1ART-USD: ArtWallet
+2026-01-10 09:55:35,938 - data_collector - INFO - Fetching d data for 1ART-USD.CC
+2026-01-10 09:55:36,430 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
+2026-01-10 09:56:06,985 - data_collector - INFO - Retrieved 23 records for 1ART-USD
+2026-01-10 09:56:07,024 - data_collector - INFO - ✓ Saved 1ART-USD.CC to /data/raw/CC/20260110/1ART-USD.csv (2,448 bytes)
+2026-01-10 09:56:07,066 - data_collector - INFO - Saved 5 records to database
+2026-01-10 09:56:07,067 - data_collector - INFO -   ✓ 23 records
+2026-01-10 09:56:07,070 - data_collector - INFO -     Date range: 2025-12-10 to 2026-01-09
+2026-01-10 09:56:09,078 - data_collector - INFO - 
+[7/20] 1EARTH-USD: EarthFund
+2026-01-10 09:56:09,080 - data_collector - INFO - Fetching d data for 1EARTH-USD.CC
+2026-01-10 09:56:09,509 - data_collector - WARNING - Rate limit exceeded. Waiting 30 seconds...
