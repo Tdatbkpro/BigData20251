@@ -1,5 +1,5 @@
 import logging
-from fastapi import APIRouter, HTTPException, Depends, Query
+from fastapi import APIRouter, HTTPException, Depends, Query, Response
 from sqlalchemy.orm import Session
 from typing import List, Dict, Any
 
@@ -35,7 +35,34 @@ async def list_hdfs_files(path: str = Query("/stock_data", description="HDFS pat
     except Exception as e:
         logger.error(f"Error listing HDFS files: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
-
+@router.get("/hdfs/download")
+async def download_hdfs_file(file_path: str = Query(..., description="HDFS file path")):
+    """Download file from HDFS"""
+    try:
+        logger.info(f"API: Downloading HDFS file {file_path}")
+        
+        hdfs_service = HDFSService()
+        
+        # Get filename
+        filename = file_path.split('/')[-1]
+        
+        # Read file as bytes
+        with hdfs_service.client.read(file_path) as reader:
+            file_content = reader.read()
+        
+        # Return as downloadable response
+        return Response(
+            content=file_content,
+            media_type="application/octet-stream",
+            headers={
+                "Content-Disposition": f"attachment; filename={filename}",
+                "Content-Type": "application/octet-stream"
+            }
+        )
+        
+    except Exception as e:
+        logger.error(f"Error downloading HDFS file: {str(e)}", exc_info=True)
+        raise HTTPException(status_code=500, detail=str(e))
 @router.get("/hdfs/read")
 async def read_hdfs_file(
     file_path: str = Query(..., description="HDFS file path"),
@@ -46,11 +73,34 @@ async def read_hdfs_file(
         logger.info(f"API: Reading HDFS file {file_path}")
         
         hdfs_service = HDFSService()
-        content = hdfs_service.read_file(file_path, limit)
+        content_lines = hdfs_service.read_file(file_path, limit)
+        
+        # Nếu read_file trả về list, convert thành string
+        if isinstance(content_lines, list):
+            # Nếu là list of dicts (CSV rows đã parse)
+            if content_lines and isinstance(content_lines[0], dict):
+                # Convert back to CSV string
+                import csv
+                import io
+                
+                output = io.StringIO()
+                if content_lines:
+                    writer = csv.DictWriter(output, fieldnames=content_lines[0].keys())
+                    writer.writeheader()
+                    writer.writerows(content_lines)
+                    content = output.getvalue()
+                else:
+                    content = ""
+            else:
+                # Nếu là list of strings
+                content = '\n'.join(str(line) for line in content_lines)
+        else:
+            # Nếu đã là string
+            content = content_lines
         
         return {
             "file_path": file_path,
-            "lines": len(content),
+            "lines": len(content.split('\n')),
             "content": content
         }
         

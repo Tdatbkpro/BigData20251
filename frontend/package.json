@@ -12,6 +12,7 @@
     "ajv-keywords": "^3.5.2",
     "axios": "^1.6.0",
     "date-fns": "^2.30.0",
+    "papaparse": "^5.5.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet-async": "^2.0.4",
@@ -53,4 +54,5 @@
     "typescript": "^5.2.2"
   },
   "proxy": "http://backend:8000"
+
 }

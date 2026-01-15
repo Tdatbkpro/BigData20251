@@ -1,0 +1,2 @@
+exchangeCode,symbolCode,interval,date,open,high,low,close,volume,symbol,exchange,download_timestamp
+OTCBB,AANNF,d,2025-12-31,3.105,3.105,3.105,3.105,2000,AANNF,OTCBB,2026-01-14 10:13:14.125418
